@@ -1,0 +1,769 @@
+\chapter{Onde elettromagnetiche}%Onde elettromagnetiche
+\section{Onde elettromagnetiche piane}%Onde elettromagnetiche piane
+Le onde elettromagnetiche hanno le proprietà di propagarsi nel vuoto, in assenza di materia, di essere trasversali in tali condizioni e di essere prodotte da cariche elettriche in moto con accelerazione molto grande. Possono essere rivelate a grande distanza dalla sorgente ad esempio sfruttando l'interazione del campo elettrico e del campo magnetico di cui sono composte con le cariche elettriche libere presenti in un conduttore.
+
+\subsection{Mezzo indefinito, omogeneo di costante dielettrica \dke e permeabilità magnetica $\mu$, senza cariche libere e correnti di conduzione}
+Essendo $\rho=0$ e $\j=0$, si hanno le equazioni di Maxwell:
+\begin{equation}\begin{split}
+\begin{cases}
+\div\E=0\\
+\div\B=0\\
+\rot\E=-\frac{\partial\B}{\partial t}\\
+\rot\B=\e\mu\frac{\partial\E}{\partial t}
+\end{cases}
+\end{split}\end{equation}
+
+Ognuna delle componenti del campo elettrico \dE e del campo magnetico \dB soddisfa l'equazione differenziale delle onde piane:
+\begin{equation}\begin{split}
+\frac{\partial^2\xi}{\partial x^2}=\frac{1}{v^2}\frac{\partial^2\xi}{\partial t^2}=\e\mu\frac{\partial^2\xi}{\partial t^2}
+\end{split}\end{equation}
+con $\xi=E_y,E_z,B_y,B_z$. I campi \dE e \dB si propagano lungo l'asse $x$ sotto forma di onde piane con \b{velocità}:
+\begin{equation}\begin{split}
+v=\frac{1}{\sqrt{\e\mu}}=\frac{c}{\sqrt{\ke\km}}
+\end{split}\end{equation}
+dove $c$ è la velocità della luce (\SI[exponent-product = \cdot]{2.99792458e8}{m/s}).
+
+\b{Le componenti di \dB risultano dipendenti da quelle del campo $\E$}:
+\begin{equation}\begin{split}
+\begin{cases}
+\E=E_y\(x-vt\)\bb{u}_y+E_z\(x-vt\)\bb{u}_z\\
+v\B=E_y\(x-vt\)\bb{u}_z-E_z\(x-vt\)\bb{u}_y
+\end{cases}
+\end{split}\end{equation}
+da cui si deducono tutte le relazioni tra \dE e \dB in un'onda \elettrom piana. Dalla seconda si ricava la \b{relazione tra i moduli dei campi, valida in ogni istante e in ogni punto}:
+\begin{equation}\begin{split}
+B=\frac{E}{v}, \qquad E=vB, \qquad \frac{E}{B}=v
+\end{split}\end{equation}
+Si ottiene quindi:
+\begin{equation}\begin{split}
+\E\cdot\B=0
+\end{split}\end{equation}
+che mostra che \b{i vettori \dE e \dB sono sempre perpendicolari tra loro}.
+
+Facendo il prodotto vettoriale si ottiene:
+\begin{equation}\begin{split}
+\E\times\B=\frac{E^2}{v}\bb{u}_x=vB^2\bb{u}_x=EB\bb{u}_x
+\end{split}\end{equation}
+che da il verso e la direzione di propagazione, essendo parallelo e concorde all'asse $x$.
+
+Le \b{proprietà} sono quindi:
+\begin{itemize}
+\item \dE e \dB si propagano con la stessa velocità $v$, che nel vuoto vale $c$;
+\item i moduli dei campi sono legati dalla relazione di proporzionalità $B=\frac{E}{v}$, nel vuoto $B=\frac{E}{c}$;
+\item \dE e \dB sono ortogonali tra loro e alla direzione di propagazione: nel caso specifico delle onde elettromagnetiche sono onde trasversali e per esse è significativo il concetto di polarizzazione;
+\item il verso del prodotto vettoriale $\E\times\B$ definisce il verso di propagazione, mentre il modulo è proporzionale al quadrato del modulo di \dE o di $\B$.
+\end{itemize}
+In un fenomeno variabile quale la propagazione, i campi \dE e \dB sono inscindibili: la presenza di uno comporta la presenza dell'altro.
+
+Nella maggior parte dei mezzi ordinari la suscettività magnetica è tale che $|\km-1|<10^{-5}$, per cui si può porre $\km=1$ e definire l'\b{indice di rifrazione assoluto del mezzo}:
+\begin{equation}\begin{split}
+n=\frac{c}{v}=\sqrt{\ke}.
+\end{split}\end{equation}
+
+Definendo $B=\mu H$ si riesce a definire l'\b{impedenza caratteristica del mezzo}:
+\begin{equation}\begin{split}
+Z=\frac{E}{H}=\mu v=\sqrt{\frac{\mu}{\e}}
+\end{split}\end{equation}
+che nel vuoto vale $Z_0=\SI{377}{\ohm}$ e nei mezzi trasparenti con $\km=1$ permette la relazione:
+\begin{equation}\begin{split}
+Z=\frac{Z_0}{\sqrt{\ke}}=\frac{Z_0}{n}.
+\end{split}\end{equation}
+
+\section{Polarizzazione delle onde elettromagnetiche piane}%Polarizzazione delle onde elettromagnetiche piane
+Le sorgenti elettromagnetiche di maggiore interesse emettono pacchetti d'onde armonici di durata definita. Ricordando che \b{un'onda trasporta energia, quantità di moto e \mom angolare}, si descrive un'onda armonica piana tramite:
+\begin{equation}\begin{split}
+\begin{cases}
+E_y\(x,t\)=E_{0_{y}}\sin{\(kx-\omega t\)}\\
+E_z\(x,t\)=E_{0_{z}}\sin{\(kx-\omega t+\delta\)}
+\end{cases}
+\end{split}\end{equation}
+valendo le relazioni: $\omega=kv=2\pi\nu$, $\lambda\nu=v$, $k=\frac{2\pi}{\lambda}$. Per un'onda \elettrom piana si riesce a definire la \b{polarizzazione}.
+
+\subsection{Polarizzazione rettilinea: $\delta=0$, $\delta=\pi$}
+Il campo \dE giace sempre nel piano di polarizzazione passante per l'asse $x$ e formante l'angolo $\theta$ con il piano $(x,y)$.
+\begin{equation}\begin{split}
+\begin{cases}
+E_y\(x,t\)=E_{0_{y}}\sin{\(kx-\omega t\)}\\
+E_z\(x,t\)=\pm E_{0_{z}}\sin{\(kx-\omega t\)}
+\end{cases}
+\end{split}\end{equation}
+Il rapporto $\frac{E_z}{E_y}=\tan{\theta}$ è costante. Nel piano $(x,y)$ oscilla con ampiezza:
+\begin{equation}\begin{split}
+E_0=\sqrt{E_{0_{y}}^2+E_{0_{z}}^2} \Longrightarrow E_{0_{y}}=E_0\cos{\theta} \qquad E_{0_{z}}=E_0\sin{\theta}.
+\end{split}\end{equation}
+
+\subsection{Polarizzazione ellittica: $\delta=\frac{\pi}{2}$, $\delta=\frac{3\pi}{2}$}
+La direzione di \dE cambia lungo l'asse $x$, descrivendo un giro completo su una distanza $\lambda$. Nel piano $(y,z)$, al passare del tempo, la punta di \dE descrive un'ellisse di semiassi $E_{0_{y}}$, $E_{0_{z}}$.
+\begin{equation}\begin{split}
+\begin{cases}
+E_y\(x,t\)=E_{0_{y}}\sin{\(kx-\omega t\)}\\
+E_z\(x,t\)=\pm E_{0_{z}}\cos{\(kx-\omega t\)}
+\end{cases}
+\end{split}\end{equation}
+Il modulo del campo vale:
+\begin{equation}\begin{split}
+E=\sqrt{E_y^2+E_z^2}.
+\end{split}\end{equation}
+
+\subsection{Polarizzazione circolare}
+In funzione di $x$ e $t$ la variabilità del campo è analoga a quella per la polarizzazione ellittica, con l'ellisse che degenera in una circonferenza.
+\begin{equation}\begin{split}
+\begin{cases}
+E_y\(x,t\)=E_{0}\sin{\(kx-\omega t\)}\\
+E_z\(x,t\)=\pm E_{0}\cos{\(kx-\omega t\)}
+\end{cases}
+\end{split}\end{equation}
+Il campo elettrico ha ampiezza costante $E_0$.
+
+La polarizzazione di un'onda \elettrom nasce dalla sovrapposizione di due onde coerenti che si propagano giacendo in due piani ortogonali, definendo coerenti due onde per le quali la differenza di fase rimane costante nel tempo. \b{La luce riflessa è parzialmente polarizzata}. Gli occhiali polaroid diminuiscono, dimezzando, l'intensità luminosa.
+
+\section{Energia di un'onda elettromagnetica piana}%Energia di un'onda elettromagnetica piana
+La presenza dei campi \dE e \dB comporta una certa quantità di energia distribuita nello spazio. In un mezzo omogeneo le densità sono:
+\begin{equation}\begin{split}
+u_e=\frac{1}{2}\e E^2 \qquad u_m=\frac{1}{2}\frac{B^2}{\mu}
+\end{split}\end{equation}
+e si definisce la \b{densità istantanea di energia elettromagnetica}:
+\begin{equation}\begin{split}
+u=\frac{1}{2}\e E^2+\frac{1}{2}\frac{B^2}{\mu}.
+\end{split}\end{equation}
+
+Per un'onda \elettrom piana si ha che $u_m=u_e$, perciò l'\b{energia elettromagnetica risulta per metà dovuta al campo elettrico e per metà al campo magnetico}:
+\begin{equation}\begin{split}
+u=2u_e=\e E^2
+\end{split}\end{equation}
+questo risultato è valido in generale anche per onde non piane.
+
+Considerando un elemento di superficie $d\Sigma$ il cui versore normale \dun forma un angolo $\alpha$ con la direzione di propagazione definita da $\bb{v}$, ovvero il vettore $\bb{k}$, si ha l'\b{energia contenuta nel volume del prisma elementare}:
+\begin{equation}\begin{split}
+dU=ud\tau=u v\cos{\(\alpha\)}d\Sigma dt=\e E^2v\cos{\(\alpha\)} d\Sigma dt
+\end{split}\end{equation}
+mentre la \b{potenza} che attraversa $d\Sigma$ è:
+\begin{equation}\begin{split}
+dP=\e E^2v\cos{\(\alpha\)}d\Sigma.
+\end{split}\end{equation}
+
+Viene definito quindi il \b{vettore di Poynting} che ha \b{direzione e verso coincidenti con quelli della velocità di propagazione} e il suo \b{modulo rappresenta l'energia \elettrom che per unità di tempo passa attraverso l'unità di superficie ortogonale alla direzione di propagazione}:
+\begin{equation}\begin{split}
+\S=\e E^2\bb{v}=\frac{1}{\mu}\E\times\B
+\end{split}\end{equation}
+tale che il suo flusso attraverso la superficie $d\Sigma$ dà la potenza istantanea attraverso $d\Sigma$:
+\begin{equation}\begin{split}
+dP=\S\cdot\un d\Sigma=Sd\Sigma_0=\frac{1}{\mu}\(\E\times\B\)\cdot\un d\Sigma\\
+\Longrightarrow P=\int_{\Sigma}{\S\cdot\un d\Sigma}=\int_{\Sigma}{\frac{1}{\mu}\(\E\times\B\)\cdot\un d\Sigma}
+\end{split}\end{equation}
+dove $d\Sigma_0$ è la superficie infinitesima ortogonale a $\bb{v}$.
+
+\subsection{Onda piana armonica polarizzata rettilineamente}
+Si ha:
+\begin{equation}\begin{split}
+E=E_0\sin{\(kx-\omega t\)}\\
+\Longrightarrow S=\e E^2v=\e vE_0^2\sin^2{\(kx-\omega t\)}
+\end{split}\end{equation}
+
+Nella pratica è importante calcolare il \b{flusso medio}, e quindi si ha il \b{valore medio del vettore di Poynting}:
+\begin{equation}\begin{split}
+S_m=\e v\(E^2\)_m=\e v\frac{1}{t}\int_0^t{E_0^2\sin^2{\(kx-\omega t\)}dt}=\frac{1}{2}\e vE_0^2.
+\end{split}\end{equation}
+Si può definire anche l'\b{intensità trasportata da un'onda \elettrom piana armonica polarizzata rettilineamente}:
+\begin{equation}\begin{split}
+I=S_m=\e v\(E^2\)_m=\frac{1}{2}\e vE_0^2=\e vE_{\textrm{eff}}^2.
+\end{split}\end{equation}
+
+In un mezzo \b{anisotropo} è utile \b{scomporre} le componenti dei campi elettrici sfasati, ortogonali tra loro e alla direzione di propagazione ($I_y=\frac{1}{2}\e vE_{0_{y}}^2$, $I_z=\frac{1}{2}\e vE_{0_{z}}^2$). L'\b{intensità totale} è:
+\begin{equation}\begin{split}
+I=I_x+I_y=\frac{1}{2}\e v\(E_{0_{y}}^2+E_{0_{z}}^2\)
+\end{split}\end{equation}
+che \b{risulta indipendente dallo sfasamento tra le componenti e} quindi \b{dallo stato di polarizzazione}.
+
+L'intensità dell'onda armonica è sempre proporzionale al quadrato del valore medio dell'ampiezza del campo elettrico.
+\begin{center}\begin{tabularx}{15.6cm}{c| c c}
+\toprule
+Stato di polarizzazione & Equazione dell'onda & Intensità dell'onda \\
+\midrule
+ & $E_y=E_0\cos{\theta}\sin{\(kx-\omega t\)}$ & $I_y=\frac{1}{2}\frac{n}{Z_0}E_0^2\cos^2{\theta}$ \\[1.5ex]
+Onda rettilinea & $E_z=E_0\sin{\theta}\sin{\(kx-\omega t\)}$ & $I_z=\frac{1}{2}\frac{n}{Z_0}E_0^2\sin^2{\theta}$ \\[1.5ex]
+ & & $I=I_y+I_z=\frac{1}{2}\frac{n}{Z_0}E_0^2$ \\[1.5ex]
+\midrule
+ & $E_y=E_{0_{y}}\sin{\(kx-\omega t\)}$ & $I_y=\frac{1}{2}\frac{n}{Z_0}E_{0_{y}}^2$ \\[1.5ex]
+Onda ellittica & $E_z=E_{0_{z}}\cos{\(kx-\omega t\)}$ & $I_z=\frac{1}{2}\frac{n}{Z_0}E_{0_{z}}^2$ \\[1.5ex]
+ & & $I=I_y+I_z=\frac{1}{2}\frac{n}{Z_0}\(E_{0_{y}}^2+E_{0_{z}}^2\)$ \\[1.5ex]
+\midrule
+ & $E_y=E_0\sin{\(kx-\omega t\)}$ & $I_y=\frac{1}{2}\frac{n}{Z_0}E_0^2$ \\[1.5ex]
+Onda circolare & $E_z=E_0\cos{\(kx-\omega t\)}$ & $I_z=I_y$ \\[1.5ex]
+ & & $I=I_y+I_z=\frac{n}{Z_0}E_0^2$ \\[1.5ex]
+\midrule
+ & $E_y=\(E_{0_{y}}\)_m\sin{\(kx-\omega t\)}$ & $I_y=\frac{1}{2}\frac{n}{Z_0}\(E_{0_{y}}^2\)_m$ \\[1.5ex]
+Onda non polarizzata & $E_z=\(E_{0_{z}}\)_m\sin{\[kx-\omega t+\delta\(t\)\]}$ & $I_z=I_y$ \\[1.5ex]
+ & & $I=\frac{1}{2}\frac{n}{Z_0}\(E_{0}^2\)_m$ \\[1.5ex]
+\bottomrule
+\end{tabularx}\end{center}
+
+\section{Quantità di moto di un'onda elettromagnetica piana}%Quantità di moto di un'onda elettromagnetica piana
+La forza di Lorentz, esercitata dai campi che costituiscono l'onda, è:
+\begin{equation}\begin{split}
+\F=q\(\E+\v\times\B\)
+\end{split}\end{equation}
+mentre l'\b{energia ceduta dall'onda} è:
+\begin{equation}\begin{split}
+\mathcal{L}=\int{\F\ds}=\int_{t=0}^T{\F\cdot\v dt}=\int_0^T{q\(\E+\v\times\B\)\cdot\v dt}=q\int_0^T{\E\cdot\v dt}.
+\end{split}\end{equation}
+con $\v$ la velocità della particella e $c$ la velocità dell'onda, essendo nel vuoto.
+
+\b{Il campo elettrico} quindi \b{compie lavoro, quello magnetico incide sulla quantità di moto}. Inoltre il termine contenente \dB si annulla perché nel prodotto misto due vettori sono uguali e dunque \dB non contribuisce alla potenza assorbita
+\begin{equation}\begin{split}
+\F\cdot\v=q\E\cdot\v+q\v\times\B\cdot\v=q\v\E.
+\end{split}\end{equation}
+
+Quando un sistema di cariche assorbe un'energia $\mathcal{L}$ da un'onda elettromagnetica, esso riceve anche un impulso \dI la cui componente nella direzione e verso di propagazione dell'onda è:
+\begin{equation}\begin{split}
+I=q\v\cdot\E.
+\end{split}\end{equation}
+
+La \b{forza magnetica} che dà origine ad un effetto meccanico, rimane normale alla superficie $\Sigma$ su cui stanno \dv e \dB ed è concorde a $\E\times\B$. Il suo valore medio è:
+\begin{equation}\begin{split}
+\F_m=q\(\v\times\B\)_m=\frac{q}{c}\(\v\cdot\E\)=\frac{\I}{c}.
+\end{split}\end{equation}
+definendo la \b{pressione di radiazione} come:
+\begin{equation}\begin{split}
+P_{\textrm{rad}}=\frac{\I}{c}=\frac{I}{c}\cos^2{\theta}
+\end{split}\end{equation}
+
+Questi risultati sono validi se la superficie colpita è \b{completamente assorbente}. Per una \b{superficie completamente riflettente} invece si ha:
+\begin{equation}\begin{split}
+P_{\textrm{rad}}=\frac{2\I}{c}=\frac{2I}{c}\cos^2{\theta}
+\end{split}\end{equation}
+
+Non esiste alcun mezzo totalmente trasparente alle radiazioni elettromagnetiche (tranne il vuoto). La trasparenza dipende dallo spessore e dalle proprietà chimico-fisiche del materiale.
+
+\subsection{Riepilogo}
+La \b{quantità di moto per unità di volume} è:
+\begin{equation}\begin{split}
+\p_\tau=\frac{u}{c}\bb{u}_x=\frac{\S}{c^2}
+\end{split}\end{equation}
+essendo $|S|=u c$, $u=\frac{\mathcal{L}}{V}$ la densità di energia e $V$ il volume. La \b{quantità di moto di un'onda di energia U} è invece:
+\begin{equation}\begin{split}
+\p=\frac{U}{c}\bb{u}_x
+\end{split}\end{equation}
+mentre la \b{quantità di moto media per unità di superficie e tempo} è:
+\begin{equation}\begin{split}
+\p_I=\frac{I}{c}\bb{u}_x.
+\end{split}\end{equation}
+
+Essendo $P=\int_{\Sigma}{\S\cdot\un d\Sigma}$, considerando $\Sigma$ chiusa, si ha:
+\begin{equation}\begin{split}
+P_1-P_2=\frac{dU}{dt}=\frac{\partial}{\partial t}\int_\tau{ud\tau}=-\int_\Sigma{\S\cdot\un d\Sigma}
+\end{split}\end{equation}
+e applicando il teorema della divergenza si ottiene che la divergenza del vettore di Poynting è uguale all'opposto della variazione temporale della densità di energia:
+\begin{equation}\begin{split}
+\int_\Sigma{\S\cdot\un d\Sigma}=\int_\tau{\div\S d\tau}=-\frac{\partial}{\partial t}\int_\tau{ud\tau}=-\int_\tau{\frac{\partial u}{\partial t}d\tau}\\
+\Longrightarrow \div\S=-\frac{\partial u}{\partial t}.
+\end{split}\end{equation}
+
+Se sono presenti anche cariche elettriche si ottiene:
+\begin{equation}\begin{split}
+\div\S+\E\cdot\j=-\frac{\partial u}{\partial t}.
+\end{split}\end{equation}
+essendo $\j=\rho\v$.
+
+Il \b{momento angolare per unità di volume} di un'onda \elettrom polarizzata circolarmente è:
+\begin{equation}\begin{split}
+\L=\bb{r}\times\p=\bb{r}\times\frac{\S}{c^2}.
+\end{split}\end{equation}
+
+\section{Onde elettromagnetiche piane, sferiche, cilindriche}%Onde elettromagnetiche piane, sferiche, cilindriche
+\subsection{Onda \elettrom piana armonica che si propaga in qualsiasi direzione}
+Si può rappresentare come:
+\begin{equation}\begin{split}
+E=E_0\sin{\(\bb{k}\cdot\r-\o t\)}
+\end{split}\end{equation}
+definendo \b{fronte d'onda} $\sin{\(\bb{k}\cdot\r-\o t\)}$, \dr è il raggio vettore che unisce il punto $O$ con il punto $P$ sul fronte d'onda e $\bb{k}=\frac{2\pi}{\lambda}=\frac{\o}{v}$ il vettore di propagazione con direzione e verso coincidenti con quelli di propagazione dell'onda.
+
+\subsection{Onde sferiche}
+Si possono rappresentare come:
+\begin{equation}\begin{split}
+E=\frac{E_0}{r}\sin{\(kr-\omega t\)}.
+\end{split}\end{equation}
+Il campo elettrico e magnetico si propagano con velocità \dv lungo i raggi vettori \dr uscenti dal punto $O$ in cui è posta la sorgente. \dE e \dB appartengono al piano perpendicolare al raggio \dr e valgono le relazioni:
+\begin{equation}\begin{split}
+E=Bv, \qquad \E\cdot\B=0, \qquad \E\times\B=\frac{E^2}{v}\bb{u}_r.
+\end{split}\end{equation}
+
+Il vettore di Poynting è definito da:
+\begin{equation}\begin{split}
+\S=\frac{1}{\mu}\E\times\B
+\end{split}\end{equation}
+e l'intensità è:
+\begin{equation}\begin{split}
+I=\frac{1}{2}\e v\frac{r_0E_0^2}{r^2}=\frac{n}{2Z_0}\frac{E_0^2}{r^2}
+\end{split}\end{equation}
+con $r_0$ il raggio per cui $\E=0$.
+
+\subsection{Onda cilindrica}
+Si può rappresentare come:
+\begin{equation}\begin{split}
+E=\frac{E_0\sqrt{r_0}}{\sqrt{r}}\sin{\(kr-\omega t\)}
+\end{split}\end{equation}
+con $r_0$ il raggio per cui $\E=0$.
+
+L'intensità è:
+\begin{equation}\begin{split}
+I=\frac{1}{2}\e v\frac{E_0^2r_0}{r}=\frac{n}{2Z_0}\frac{E_0^2}{r}.
+\end{split}\end{equation}
+
+\b{Portandosi a grande distanza dalla sorgente si ottiene un fronte d'onda piano e l'ampiezza dell'onda è approssimativamente costante su tratti non troppo lunghi}.
+
+\section{Radiazione elettromagnetica prodotta da un dipolo elettrico oscillante}%Radiazione elettromagnetica prodotta da un dipolo elettrico oscillante
+\subsection{Dipolo elettrico con \mom variabile sinusoidalmente nel tempo}
+La carica è concentrata agli estremi e un generatore la fa variare opportunamente:
+\begin{equation}\begin{split}
+q=q_0\sin{\(\omega t\)}, \qquad i=\frac{dq}{dt}=\omega q_0\cos{\(\omega t\)}=i_0\cos{\(\omega t\)}.
+\end{split}\end{equation}
+Ricordando che il campo elettrico di un dipolo, a distanza $r$, diminuisce molto più velocemente di quello prodotto da una carica puntiforme, si sa che \b{la corrente varia nel tempo ma viene ritenuta costante se la lunghezza $a$ su cui varia è molto minore della lunghezza d'onda}.
+
+Il valore istantaneo del \b{\mom di dipolo elettrico} è:
+\begin{equation}\begin{split}
+\p=qa\bb{u}_z=q_0a\sin{\(\omega t\)}\bb{u}_z=p_0\sin{\(\omega t\)}\bb{u}_z
+\end{split}\end{equation}
+con $p_0=q_0a=\frac{i_0a}{\omega}$. Questo \mom produrrebbe un campo elettrico con componenti che devono essere ritenute valide in vicinanza del dipolo:
+\begin{equation}\begin{split}
+\begin{cases}
+E_r=\frac{2p\cos{\theta}}{4\pi\e_0r^3}=\frac{2p_0\cos{\theta}}{4\pi\e_0r^3}\sin{\(\omega t\)}\\
+E_\theta=\frac{p\sin{\theta}}{4\pi\e_0r^3}=\frac{p_0\sin{\theta}}{4\pi\e_0r^3}\sin{\(\omega t\)}
+\end{cases}
+\end{split}\end{equation}
+
+A distanza $r\gg\lambda\gg a$, fissata una direzione orientata \dr che parte dal centro del dipolo e forma l'angolo $\theta$ con $\p$, lungo questa \b{si propaga un'onda sferica trasversale}. I moduli sono:
+\begin{equation}\begin{split}
+E=E_\theta=\frac{p_0\sin{\theta}}{4\pi\e_0c^2}\frac{\omega^2}{r}\sin{\(kr-\omega t\)}=\frac{\pi p_0\sin{\theta}}{\e_0}\frac{1}{\lambda^2r}\sin{\(kr-\omega t\)}
+\end{split}\end{equation}
+\begin{equation}\begin{split}
+B=B_\phi=\frac{E}{c}.
+\end{split}\end{equation}
+
+\subsection{Porzione limitata del fronte d'onda sferico a grande distanza dal dipolo}
+Le direzioni di \dE e \dB sono fisse (l'onda è polarizzata rettilineamente) con il campo \dE contenuto nel piano meridiano. L'\b{intensità dell'onda emessa dal dipolo} è:
+\begin{equation}\begin{split}
+I\(r;\theta\)=\frac{1}{2}\e_0cE_0^2=\frac{p_0^2\omega^4}{32\pi^2\e_0c^3}\frac{\sin^2{\theta}}{r^2}=\frac{I_0}{r^2}\sin{\theta}
+\end{split}\end{equation}
+con 
+\begin{equation}\begin{split}
+I_0=\frac{p_0^2\omega^4}{32\pi^2\e_0c^3};
+\end{split}\end{equation}
+l'intensità è massima all'equatore $I_{\max}=\frac{I_0}{r^2}$.
+
+La \b{potenza complessiva emessa dal dipolo} è:
+\begin{equation}\begin{split}
+P=\int{I\(\theta\)d\Sigma}=\frac{4\pi^3p_0^2\nu^4}{3\e_0c^3}=\frac{8\pi}{3}I_0
+\end{split}\end{equation}
+avendo fissato il valore di $p_0$, anche \b{la potenza irradiata dipende dalla quarta potenza della frequenza}.
+
+Chiamando \b{antenna dipolare} il dipolo oscillante e indicando con $i_0$ il valore massimo di corrente circolante e ricordando che $p_0=\frac{ai_0}{\omega}$ si ha:
+\begin{equation}\begin{split}
+I_0=\frac{a^2i_0^2\omega^2}{32\pi^2\e_0c^3}
+\end{split}\end{equation}
+\begin{equation}\begin{split}
+\Longrightarrow P=\frac{8\pi}{3}I_0=\frac{1}{2}\(\frac{a^2\omega^2}{6\pi\e_0c^3}\)i_0^2=\frac{1}{2}R_{\textrm{ant}}i_0^2=R_{\textrm{ant}}i_{\textrm{eff}}^2
+\end{split}\end{equation}
+definendo la \b{resistenza d'antenna} come
+\begin{equation}\begin{split}
+R_{\textrm{ant}}=\frac{a^2\omega^2}{6\pi\e_0c^3}=\frac{2\pi}{3}Z_0\frac{a^2}{\lambda^2}=789.5\frac{a^2}{\lambda^2}\si{\ohm}.
+\end{split}\end{equation}
+
+Analogamente si ha per il \b{dipolo magnetico}, costruito da una spira di area $\Sigma$, percorsa dalla corrente $i=i_0\sin{\(\omega t\)}$ e avente \mom magnetico $m=m_0\sin{\(\omega t\)}$ con $m_0=i_0\Sigma$:
+\begin{equation}\begin{split}
+E=E_\phi=\frac{\mu_0m_0\sin{\theta}}{4\pi c}\frac{\omega^2}{r}\sin{\(kr-\omega t\)}\\
+B=B_\theta=\frac{E}{c}
+\end{split}\end{equation}
+\begin{equation}\begin{split}
+I=\frac{m_0^2\omega^4}{32\pi\e_0c^5}\frac{\sin^2{\theta}}{r^2}\\
+P=\frac{m_0^2\omega^4}{12\pi\e_0c^5}
+\end{split}\end{equation}
+\begin{equation}\begin{split}
+R_{\textrm{ant}}=\SI[exponent-product = \cdot]{3.12e4}{}\frac{\Sigma^2}{\lambda^4}\si{\ohm}
+\end{split}\end{equation}
+
+\section{Radiazione emessa da una carica elettrica in moto accelerato}%Radiazione emessa da una carica elettrica in moto accelerato
+Un dipolo elettrico oscillante può essere rappresentato anche con una carica $-q$ fissa nell'origine e una carica $+q$ che si muove lungo l'asse $z$ con legge $z=z_0\sin{\(\omega t\)}$, che oscilla cioè con moto armonico. L'accelerazione della carica e il valor medio del suo quadrato sono:
+\begin{equation}\begin{split}
+a=-\omega^2z_0\sin{\(\omega t\)}, \qquad a^2=\frac{1}{T}\int_0^t{\omega^4z_0^2\sin^2{\(\omega t\)dt}}=\frac{\omega^4z_0^2}{2}.
+\end{split}\end{equation}
+
+Il \b{valore massimo del \mom di dipolo} è:
+\begin{equation}\begin{split}
+p_0=qz_0 \Longrightarrow p_0^2\omega^4=q^2z_0^2\omega^4=2q^2a^2
+\end{split}\end{equation}
+e la \b{potenza irradiata da una particella carica in moto accelerato}, che dà la \b{formula di Larmor} è:
+\begin{equation}\begin{split}
+P_{\textrm{Larm}}=\frac{q^2a^2}{6\pi\e_0c^3}.
+\end{split}\end{equation}
+Essa non è relativistica in quanto la velocità della carica deve sempre essere minore di $c$.
+
+La formula relativisticamente corretta è:
+\begin{equation}\begin{split}
+P_{\textrm{Lien}}=\frac{q^2}{6\pi\e_0c^3}\frac{a^2-\frac{\(\v\times\bb{a}\)^2}{c^2}}{\(1-\frac{v^2}{c^2}\)^2}
+\end{split}\end{equation}
+
+\subsection{Raggi X di frenamento - radiazione di frenamento}
+Il dispositivo per la produzione dei raggi $X$ è il \b{tubo di Coolidge}: un fascio di elettroni, emessi da un filamento incandescente per effetto termoelettrico, viene accelerato da una \ddp tipicamente compresa tra \SI{10}{\kilo\volt} e \SI{100}{\kilo\volt} e colpisce un bersaglio di materiale pesante (\ce{Cu, Pb}). Gli elettroni, penetrando nei primi strati del bersaglio, risentono dei fortissimi campi elettrici locali presenti all'interno del materiale e subiscono notevoli decelerazioni. Ciò porta all'emissione di una radiazione elettromagnetica, in accordo con la formula di Larmor, che è valida in quanto elettroni con energia cinetica inferiore a \SI{100}{\kilo\electronvolt} non sono ancora relativistici.
+
+Le frequenze emesse hanno uno spettro continuo, fino ad un valore massimo proporzionale alla \ddp utilizzata per accelerare gli elettroni. Alla frequenza massima corrisponde la lunghezza d'onda minima, molto inferiore alle lunghezze d'onda della luce visibile.
+
+La radiazione emessa dagli elettroni frenati nell'attraversamento di un mezzo materiale è detta \b{radiazione di frenamento}. Nel caso di elettroni relativistici l'emissione segue la legge di Larmor corretta con $\bb{a}$ parallelo e discorde a \dv ed avviene nell'emisfero anteriore, in modo tanto più pronunciato quanto maggiore è l'energia. Con elettroni di energia molto superiore all'energia a riposo ($mc^2\sim\SI{0.5}{\mega\electronvolt}$), le direzioni di emissione stanno su una superficie conica avente \dv come asse e semiapertura $\theta\simeq\frac{mc^2}{U}$. Lo spettro delle frequenze emesse nel processo di frenamento è continuo.
+
+\subsection{Radiazione di sincrotrone}
+Considerando un elettrone relativistico che si muove con velocità angolare $\omega$ costante lungo un'orbita circolare di raggio $r$, si ha che l'accelerazione centripeta vale $\omega^2r$ e si ha la potenza emessa:
+\begin{equation}\begin{split}
+P_{\textrm{Lien}}=\frac{e^2a^2}{6\pi\e_0c^3}\frac{1}{\(1-\frac{v^2}{c^2}\)^2}=\frac{e^2\omega^2}{6\pi\e_0c}\beta^2\gamma^4\simeq\frac{e^2\omega^2}{6\pi\e_0c}\gamma^4.
+\end{split}\end{equation}
+
+L'energia emessa in un giro completo è invece:
+\begin{equation}\begin{split}
+\Delta U=\frac{e^2}{3\e_0r}\beta^3\gamma^4\simeq\frac{e^2}{3\e_0r}\gamma^4=\frac{\SI[exponent-product = \cdot]{6.03e-9}{}}{r}\gamma^4\SI{}{\electronvolt}.
+\end{split}\end{equation}
+La radiazione emessa viene chiamata \b{radiazione di sincrotrone} (per esempio in un sincrotrone si ha uno spettro di frequenza della radiazione con un massimo di $\nu_{\max}=\SI[exponent-product = \cdot]{1.27e18}{\hertz}$ e quindi una lunghezza d'onda minima di $\lambda_{\min}=\SI[exponent-product = \cdot]{2.36e-10}{\metre}$ avendo un'energia di $\Delta U=\SI[exponent-product = \cdot]{2.44e4}{\electronvolt}$) (nel visibile si avrebbe $\lambda=\SI[exponent-product = \cdot]{400}{\nano\metre}$ e quindi $\Delta U=\SI[exponent-product = \cdot]{3.1}{\electronvolt}$).
+
+La radiazione di sincrotrone pone dei limiti costruttivi per i sincrotroni per elettroni di energia molto grande: durante il moto circolare gli elettroni irradiano energia e dunque, per mantenerli su un'orbita stabile, occorre fornire ad essi una quantità di energia uguale a quella persa. Anche potendo fornire una certa quantità di energia agli elettroni in ogni giro, l'energia stessa non può crescere oltre un certo limite perché si raggiunge una situazione di equilibrio in cui l'energia fornita viene persa per radiazione di sincrotrone. Si trova che l'energia limite è molto inferiore a quella teoricamente raggiungibile con il dato raggio di curvatura e con i valori di campo magnetico normalmente disponibili.
+
+\section{Radiazione emessa dagli atomi}%Radiazione emessa dagli atomi
+Le onde elettromagnetiche hanno origine anche da fenomeni a livello atomico e nucleare: gli elettroni legati di singoli atomi liberi o di atomi aggregati in molecole possono essere eccitati, cioè ricevere energia; successivamente l'elettrone eccitato si diseccita emettendo energia sotto forma di radiazione \elettrom con frequenza:
+\begin{equation}\begin{split}
+\nu=\frac{\Delta U}{h}.
+\end{split}\end{equation}
+
+La luce visibile è una particolare radiazione \elettrom emessa da atomi nelle frequenze e lunghezze d'onda:
+\begin{equation}\begin{split}
+\SI{3.85e14}{\hertz}\le\nu\le\SI{7.89e14}{\hertz}\\
+\SI{0.78e-6}{\metre}\ge\lambda\ge\SI{0.38e-6}{\metre}\\
+\SI{2.42e15}{rad\per\second}\le\omega\le\SI{4.96e15}{rad\per\second}
+\end{split}\end{equation}
+
+Riferendosi all'atomo di idrogeno si ha il campo elettrico della carica negativa:
+\begin{equation}\begin{split}
+E=\frac{\rho z}{3\e_0}=\frac{e}{\frac{4\pi R^3}{3}}\frac{z}{3\e_0}=\frac{ez}{4\pi\e_0R^3}=\frac{F}{e}
+\end{split}\end{equation}
+e la forza esercitata sul protone:
+\begin{equation}\begin{split}
+F=\frac{e^2z}{4\pi\e_0R^3}=eE.
+\end{split}\end{equation}
+La \b{forza di richiamo del protone} sulla carica negativa è $-F$ e perciò l'\b{equazione del moto della nube elettronica} è:
+\begin{equation}\begin{split}
+m_e\frac{d^2z}{dt^2}=-F=-\frac{e^2z}{4\pi\e_0R^3}\\
+\Longrightarrow \frac{d^2z}{dt^2}+\frac{e^2z}{4\pi\e_0m_eR^3}=0
+\end{split}\end{equation}
+che è un'oscillazione armonica di pulsazione $\omega=\sqrt{\frac{e^2z}{4\pi\e_0m_eR^3}}\simeq\SI{1.59e16}{rad\per\second}$ e frequenza $\nu=\frac{\omega}{2\pi}\simeq\SI{2.53e15}{\hertz}$.
+
+La potenza irradiata è invece:
+\begin{equation}\begin{split}
+P=\frac{e^2z_0^2\omega^4}{12\e_0c^3}=\frac{e^2\omega^4}{6\pi\e_0m_ec^3}U.
+\end{split}\end{equation}
+A seguito dell'eccitazione, avvenuta all'istante $t=0$, l'oscillatore acquista energia $U_0$ e successivamente, per effetto dell'irraggiamento, l'energia diminuisce con andamento esponenziale avente costante di tempo $\tau\simeq\SI{0.63e-9}{\second}$. Anche la potenza emessa diminuisce esponenzialmente e ciò comporta una diminuzione dell'ampiezza del campo elettrico della radiazione. L'atomo quindi emette un pacchetto d'onde con frequenza centrale $\nu$ e durata dell'ordine di $5\tau$.
+
+\subsection{Diffusione della luce}
+Per il principio di indeterminazione si ha $\Delta E\Delta t\ge\hbar$. Per far emettere una sinusoide si possono mettere degli elettroni sugli stati metastabili. Con un laser tutti gli elettroni sono coerenti in quanto un laser ha una buona monocromaticità e un'ottima intensità.
+
+Il \b{\mom di dipolo elettrico}, formatosi parallelamente al campo incidente \dE irradia onde elettromagnetiche con la stessa pulsazione di \dE con intensità $\frac{I_0}{r^2}\sin^2{\theta}$, ed è:
+\begin{equation}\begin{split}
+\p_a=e_0\alpha_e\E_0\sin{\(\omega t\)}=\p_0\sin{\(\omega t\)}.
+\end{split}\end{equation}
+
+La \b{potenza} vale invece:
+\begin{equation}\begin{split}
+P=\frac{4\pi^3\e_0\alpha_e^2cE_0^2}{3\lambda^4}.
+\end{split}\end{equation}
+
+Se l'onda \elettrom che colpisce l'atomo non è polarizzata, la direzione di $\p_a$ varia casualmente nel tempo per cui la dipendenza da $\sin^2{\theta}$ si sostituisce alla distribuzione sferica. Se un'onda piana non polarizzata incide su un piccolo volume di gas, con $N$ atomi, da esso viene emessa un'onda \elettrom detta \b{onda diffusa}, che è un'onda sferica con la stessa lunghezza d'onda incidente, intensità uniformemente distribuita e potenza $P=N\frac{4\pi^3\e_0\alpha_e^2cE_0^2}{3\lambda^4}$.
+
+\subsubsection{Colore del cielo e del sole}
+La polarizzabilità elettronica $\alpha$ è funzione di $\omega$ solitamente, ma se ci si riferisce ad un intervallo abbastanza ristretto di frequenze della luce visibile, essa si può ritenere costante. Se la radiazione incidente contiene tutte le lunghezze d'onda comprese tra il rosso e il violetto, la potenza mette in evidenza la luce viola-azzurra diffusa maggiormente rispetto alla luce rossa:
+\begin{equation}\begin{split}
+\frac{P_V}{P_R}=\(\frac{\lambda_R}{\lambda_V}\)^4=\SI{0.64}{}.
+\end{split}\end{equation}
+Ricordando che l'intensità vale $I=\frac{P}{\Sigma}$ si può capire perché \emph{il cielo si vede blu: è vero che la luce arriva tutta, ma quella blu viene diffusa molto di più perché più intensa. La sera il cielo invece è più scuro perché la luce attraversa una parte maggiore di atmosfera. Se nell'aria sono presenti goccioline d'acqua avvengono fenomeni d'interferenza della luce diffusa dalle goccioline e il cielo appare bianco-grigio}.
+
+\emph{Il sole invece si vede rosso perché perde il blu nell'attraversamento dell'atmosfera. La sera il sole si vede meglio perché più contrastato in quanto meno intensa è la luce emessa}.
+
+\subsubsection{Bussole solari}
+Le api hanno gli occhi sensibili alla polarizzazione e grazie a questo riescono ad orientarsi.
+
+\section{Effetti}%Effetti
+Nel caso delle onde elettromagnetiche il concetto di velocità rispetto al mezzo perdo significato: la velocità delle onde elettromagnetiche nel vuoto è sempre $c$, in qualsiasi sistema di riferimento ed è indipendente dal moto della sorgente e del rivelatore.
+
+\subsection{Effetto Doppler}
+Si denotano con $S$ la sorgente, $R$ il rivelatore, $v_S$ la velocità della sorgente e $v_R$ la velocità del rivelatore.
+
+\subsubsection{Sorgente si muove verso il rivelatore con velocità $v_S$}
+Dato che si possono avere velocità della sorgente non trascurabili rispetto a $c$ bisogna tener presente che si sta osservando un fenomeno che avviene in un sistema di riferimento in moto con velocità $v_S$ e che, secondo la teoria della relatività ristretta, i tempi nei due sistemi non sono uguali. Si avrebbe altrimenti $\nu=\frac{\nu_0c}{\(c-v_S\)}=\frac{\nu_0}{\(1-\frac{v_S}{c}\)}$.
+
+I fenomeni nel sistema di riferimento della sorgente appaiono, nel sistema del rivelatore, dilatati nel tempo e si ha:
+\begin{equation}\begin{split}
+\nu_R=\nu_0\frac{\sqrt{1-\frac{v_S^2}{c^2}}}{1-\frac{v_S}{c}}
+\end{split}\end{equation}
+considerando il periodo $T=\frac{T}{\sqrt{1-\frac{v_S^2}{c^2}}}$ e la frequenza $\nu_0=\nu_0\sqrt{1-\frac{v_S^2}{c^2}}$.
+
+\subsubsection{Rivelatore si muove verso la sorgente con velocità $-v_S$}
+Il periodo misurato nel sistema della sorgente appare nel sistema di $R$ più breve. Si ottiene quindi:
+\begin{equation}\begin{split}
+\nu_R=\nu_0\frac{1+\frac{v_S}{c}}{\sqrt{1-\frac{v_S^2}{c^2}}}.
+\end{split}\end{equation}
+
+\subsubsection{Riassunto}
+\b{Quando si considerano onde elettromagnetiche le due misure di frequenza coincidono sempre, qualungue sia il valore di $v_S$}.
+
+La \b{frequenza misurata dall'osservatore} è:
+\begin{equation}\begin{split}
+\nu=\frac{1\pm\frac{v}{c}}{\sqrt{1-\frac{v^2}{c^2}}}\nu_0
+\end{split}\end{equation}
+e la \b{variazione di lunghezza d'onda} è:
+\begin{equation}\begin{split}
+\lambda=\frac{\sqrt{1-\frac{v^2}{c^2}}}{1\pm\frac{v}{c}}\lambda_0
+\end{split}\end{equation}
+considerando il segno positivo la sorgente si avvicina all'osservatore e il segno negativo quando si allontana. Quindi quando la \b{frequenza aumenta, la lunghezza d'onda diminuisce se sorgente e osservatore si avvicinano, viceversa se si allontanano}.
+
+\subsection{Effetto Cerenkov}
+Quando una particella carica si muove con velocità $v$ in un mezzo dielettrico, il campo elettrico della particella eccita gli atomi del mezzo disposti lungo la traiettoria: questi acquistano un \mom di dipolo elettrico che scompare subito dopo il passaggio della particella, diventando così sorgenti impulsive di onde elettromagnetiche sferiche.
+
+Detta $\frac{c}{n}$ la velocità delle onde nel mezzo, l'angolo al vertice è tale che:
+\begin{equation}\begin{split}
+\sin{\theta}=\frac{c}{nv}=\frac{1}{n\beta}.
+\end{split}\end{equation}
+I raggi ortogonali al fronte d'onda formano con la traiettoria della particella l'angolo $\theta_C$, complementare di $\theta$, che permette di esprimere la \b{relazione di Cerenkov}:
+\begin{equation}\begin{split}
+\cos{\theta_C}=\frac{1}{n\beta}.
+\end{split}\end{equation}
+
+La condizione perché esista il fronte d'onda è quindi $\theta_C\le1$, cioè $n\beta\ge1$. Siccome $\beta$ è sempre minore di 1, \b{l'emissione avviene solo se l'indice di rifrazione è maggiore di 1}.
+
+\b{La velocità della particella}, quindi, \b{deve essere maggiore di un valore minimo che corrisponde alla velocità della luce nel mezzo}:
+\begin{equation}\begin{split}
+\beta>\beta_{\min}=\frac{1}{n}\\
+v>\frac{c}{n}
+\end{split}\end{equation}
+
+Le frequenze emesse nel mezzo sotto forma di radiazione Cerenkov hanno uno spettro molto ampio; in particolare viene emessa luce visibile. L'intensità è piuttosto ridotta.
+
+La misura dell'angolo $\theta_C$ permette di determinare la velocità della particella: si costruiscono così i contatori a effetto Cerenkov, costituiti da un mezzo, liquido o gassoso, in cui la particella incidente può provocare l'emissione di radiazione, da un sistema ottico adatto a focalizzare la luce emessa su un rivelatore e appunto da un rivelatore sensibile all'impulso di luce.
+
+\section{Spettro delle onde elettromagnetiche}%Spettro delle onde elettromagnetiche
+\b{\'E sempre la frequenza che determina le proprietà fisiche}. Si parla di frequenza se si sta lavorando nella materia. L'energia, grazie alla meccanica quantistica, viene definita invece con:
+\begin{equation}\begin{split}
+E=h\nu
+\end{split}\end{equation}
+la quantità di moto:
+\begin{equation}\begin{split}
+\p=\frac{E}{c}=\frac{h}{\lambda}.
+\end{split}\end{equation}
+Un'onda è composta da un flusso di $N$ fotoni per \SI{}{m^2} dato dalla legge:
+\begin{equation}\begin{split}
+N=\frac{I}{h\nu}.
+\end{split}\end{equation}
+
+\begin{center}\begin{tabularx}{14.55cm}{l| X c c c c}
+\toprule
+\multirow{2}{*}{Onde} & 			\multirow{2}{*}{Produzione} & 		Lunghezza d'onda & 				Frequenza & 					Energia &						 \multirow{2}{*}{Utilizzo} \\
+& & 														max (\SI{}{\metre}) & 				min (\SI{}{\hertz}) & 				min (\SI{}{\electronvolt}) & \\
+\midrule
+\multirow{2}{*}{Hertziane} & 		Dispositivi & 					\multirow{2}{*}{\SI{3e6}{}} & 		\multirow{2}{*}{\SI{e2}{}} & 			\multirow{2}{*}{\SI{0}{}} & 			Televisione \\
+& 							elettronici &  &  &  &  																									Radio \\
+\midrule
+\multirow{5}{*}{Microonde} & 		Dispositivi elettronici, & 			\multirow{5}{*}{\SI{0.3}{}} & 			\multirow{5}{*}{\SI{e9}{}} & 			\multirow{5}{*}{\SI{4e-6}{}} & 		\multirow{5}{*}{Maser} \\
+& 							fenomeni atomici &  &  &  &  \\
+\midrule
+\multirow{2}{*}{Infrarosso} & 		Corpi caldi & 					\multirow{2}{*}{\SI{e-3}{}} & 			\multirow{2}{*}{\SI{3e11}{}} & 		\multirow{2}{*}{\SI{1.2e-3}{}} & 		\multirow{2}{*}{Laser} \\
+\midrule
+\multirow{2}{*}{Visibile} & 			Agitazione & 					\multirow{2}{*}{\SI{0.78e-6}{}} & 		\multirow{2}{*}{\SI{3.8e14}{}} & 		\multirow{2}{*}{\SI{1.6}{}} & 			\multirow{2}{*}{Vista}\\
+& 							termica &  &  &  &  \\
+\midrule
+\multirow{4}{*}{Ultravioletto} & 		Part. accelerate, &				\multirow{4}{*}{\SI{0.38e-6}{}} & 		\multirow{4}{*}{\SI{7.9e14}{}} & 		\multirow{4}{*}{\SI{3.3}{}} &  		\multirow{2}{*}{Studio} \\
+& 							atomi eccitati &  &  &  &  																								\multirow{2}{*}{atomico} \\
+\midrule
+\multirow{3}{*}{Raggi $X$} & 		 Tubo di Coolridge & 				\multirow{3}{*}{\SI{6e-10}{}} &		\multirow{3}{*}{\SI{5e17}{}} & 		\multirow{3}{*}{\SI{2e3}{}} & 		\multirow{3}{*}{Medicina} \\
+\midrule
+\multirow{2}{*}{Raggi $\gamma$} & 	Processi nucleari & 				\multirow{2}{*}{$\le\SI{e-10}{}$} & 	\multirow{2}{*}{$\ge\SI{3e18}{}$} & 	\multirow{2}{*}{$\ge\SI{1.2e4}{}$} & 	 \\
+\bottomrule
+\end{tabularx}\end{center}
+
+\section{La velocità della luce}%La velocità della luce
+La \b{velocità della luce nel vuoto} è:
+\begin{equation}\begin{split}
+c=\SI{2.99792458e8}{m/s}.
+\end{split}\end{equation}
+Il \b{vuoto non è dispersivo}, cioè tutte le onde elettromagnetiche si propagano nel vuoto con velocità $c$, indipendentemente dalla loro frequenza.
+
+Le prime misure furono dedotte da osservazioni astronomiche. Nel 1676 Roemer osservando le eclissi della luna Io di Giove, causate dal cono d'ombra di Giove stesso, trovò che il periodo di tali eclissi variava durante l'anno e precisamente aumentava quando la terra si allontanava da Giove e diminuiva quando i due pianeti si avvicinavano. Capì che l'aumento apparente di periodo dipendeva dal fatto che la luce doveva percorrere un cammino più lungo per arrivare sulla terra quando questa si allontanava da Giove. La differenza tra i valori massimo e minimo del periodo era principalmente legata al diametro dell'orbita terrestre e con i dati allora disponibili, Roemer calcolò $c=\SI{2.143e8}{m/s}$.
+
+Nel 1728 Bradley riuscì a spiegare l'aberrazione delle stelle nel corso di un anno riducendolo giustamente al fatto che il fenomeno è osservato da un riferimento mobile. Per osservare una stella allo zenith è necessario inclinare il tubo di un telescopio di un angolo $\alpha$. La luce della stella arriva verticalmente nel punto più estremo del telescopio, ma questo si muove con la velocità della terra; la luce non raggiungerebbe direttamente l'occhio dell'osservatore e sarebbe assorbita dalle pareti, se il tubo non fosse inclinato di un angolo tale che:
+\begin{equation}\begin{split}
+\tan{\alpha}=\frac{v_T}{c}.
+\end{split}\end{equation}
+
+Nel 1849 Fizeau sviluppò il seguente metodo: un raggio luminoso percorre un cammino $2h$ tramite la riflessione su uno specchio piano; sul cammino della luce è interposta una ruota dentata, che ruota con velocità angolare $\omega$. La luce può superare la ruota, essere riflessa dallo specchio e superare di nuovo la ruoto solo se sia all'andata che al ritorno passa nello spazio tra due denti. Detto $\Delta \phi$ l'intervallo angolare tra due posizioni di passaggio, deve essere soddisfatta la condizione:
+\begin{equation}\begin{split}
+\frac{\Delta \phi}{\omega}=\frac{2hn}{c}\\
+\Longrightarrow c=\frac{2hn\omega}{\pi}.
+\end{split}\end{equation}
+
+Foucault nel 1850 mise a punto un metodo simile basato su uno specchio rotante; metodo che fu perfezionato da Michelson nel 1927.
+
+Per misurare la velocità della luce ora si usano dei laser stabili e monocromatici con lunghezza d'onda misurata attraverso interferenze e usando la relazione $c=\lambda\nu$.
+
+Utilizzando gli standard per la frequenza $\nu$ (o per il tempo $t$), il metro diventa un unità di lunghezza secondaria esprimibile attraverso $c$ e $\nu$ (oppure $t$): il metro è la lunghezza percorsa nel vuoto da un'onda \elettrom nell'intervallo di tempo pari a \SI{1/299792458}{s}. Il secondo è la durata di \SI{9162631770}{} periodi della radiazione emessa nella transizione tra due livelli iperfini dell'atomo \ce{^{133}Cs_{55}} . I livelli sono quelli $F=4$, $M=0$ e $F=3$, $M=0$ dello stato fondamentale \ce{^2S_{1/2}}. Poiché l'unità di tempo ha una precisione relativa di $\sim$\SI{1/e14}, anche l'unità di lunghezza (essendo $c$ esatta) ha la stessa precisione.
+
+\section{Propagazione di un'onda \elettrom in un mezzo dielettrico}%Propagazione di un'onda elettromagnetica in un mezzo dielettrico
+Gli elettroni in un volume che incidono sulla corrente ($eN\v=\j$) sono tutti, anche quelli legati.
+
+A frequenze molto elevate rispetto a quelle di risonanza, gli elettroni legati si comportano come liberi.
+
+\subsection{Formalismo complesso e reale}
+Si hanno le equazioni nel formalismo reale:
+\begin{equation}\begin{split}
+\begin{cases}
+E=E_0\cos{\(\omega t\)}\\
+x=CE_0\cos{\(\omega t+\phi\)}\\
+x'=-C\omega E_0\sin{\(\omega t+\phi\)}\\
+J=eNx'=eNC\omega E_0\[\sin{\(\omega t+\phi\)}\cos{\phi}+\cos{\(\omega t+\phi\)}\sin{\phi}\]
+\end{cases}
+\end{split}\end{equation}
+e nel formalismo complesso:
+\begin{equation}\begin{split}
+\begin{cases}
+\widetilde E=E_0e^{i\omega t}\\
+\widetilde x=CE_0e^{i\(\omega t+\phi\)}\\
+\widetilde x'=i\omega\widetilde x=Ci\omega \widetilde E e^{i\phi}\\
+\widetilde J=en\widetilde x'=eNCi\omega \widetilde Ee^{i\phi}=\widetilde\sigma \widetilde E
+\end{cases}
+\end{split}\end{equation}
+considerando $\widetilde\sigma=\sigma_1+\sigma_2=-enC\omega\sin{\phi}+eNC\omega\cos{\phi}$.
+
+Analogamente si hanno:
+\begin{equation}\begin{split}
+\begin{cases}
+\widetilde P=eN\widetilde x=\e_0\widetilde \chi\widetilde E\\
+\widetilde \e=\e_1+i\e_2=\e_0\(1+\widetilde \chi\)\\
+\widetilde \sigma=-i\omega\widetilde \e\\
+\widetilde D=\widetilde\e\widetilde E
+\end{cases}
+\end{split}\end{equation}
+
+In un mezzo omogeneo, isotropo, non magnetico e senza cariche si ha la \b{funzione dielettrica} $\widetilde \e\(\omega,\q\)$ con $\q=\frac{2\pi\u}{\lambda}$ e attraverso le equazioni di Maxwell si ha l'equazione dell'onda:
+\begin{equation}\begin{split}
+\nabla^2\E=\e\mu_0\frac{\partial^2\E}{\partial t^2}+\sigma\mu_0\frac{\partial\E}{\partial t}
+\end{split}\end{equation}
+che ha come soluzione un'onda monocromatica piana:
+\begin{equation}\begin{split}
+\widetilde \E\(\r,t\)=\widetilde \E_0e^{i\(\widetilde \q\r-\omega t\)}.
+\end{split}\end{equation}
+considerando $\widetilde q=q_1+iq_2$.
+
+\subsection{Dispersione}
+Inserendo la soluzione complessa per l'onda piana nell'equazione dell'onda si ottiene la \b{relazione di dispersione}:
+\begin{equation}\begin{split}
+\widetilde \q\widetilde \q=\mu_0\(\e+i\frac{\sigma}{\omega}\)\omega^2=\mu_0\widetilde \e\(\omega,\q\)\omega^2.
+\end{split}\end{equation}
+La dipendenza di $\widetilde \e$ da \dq e $\omega$, descrive la dispersione spaziale e temporale del materiale. Se $\lambda\gg a$, essendo $a$ la larghezza del mezzo, la variazione spaziale di $\widetilde \e$ può essere negativa. Inoltre se $\q\to0$ ($\lambda\to\infty$), la risposta longitudinale e trasversa coincidono, cioè nel mezzo non si possono distinguere i campi elettrici paralleli o perpendicolari a $\q$.
+
+Lo spostamento di una carica puntiforme non dipende da \dE ma da $\El$.
+
+In un mezzo anisotropo si può definire il \b{tensore dielettrico complesso}:
+\begin{equation}\begin{split}
+\widetilde {\widetilde \e}.
+\end{split}\end{equation}
+$\e_1\(\omega\)$ e $\e_2\(\omega\)$ sono tensori simmetrici che quindi possono essere sempre diagonalizzati. Solitamente la direzione degli assi principali è differente per $\e_1\(\omega\)$ e $\e_2\(\omega\)$ ma coincide nei cristalli con assi di simmetria almeno ortorombica. 
+
+In un mezzo dielettrico non lineare è possibile espandere la relazione tra \dP e \dE in serie di Taylor e ottenere:
+\begin{equation}\begin{split}
+\P=\e_0\(\chi\E+\chi''\E^2+\chi'''\E^3+\dots\).
+\end{split}\end{equation}
+In questo caso non è possibile applicare il principio di D'Alembert ma le equazioni di Maxwell possono essere usate per derivare un'equazione differenziare non lineare.
+
+Da $\widetilde q^2=\mu_0\widetilde \e\omega^2$ si ha $\widetilde q=\frac{\omega}{c}\sqrt{\widetilde \ke}=\frac{\omega}{c}\widetilde n$  dove $\widetilde n$ è l'\b{indice di rifrazione complesso}. In definitiva quindi si ottiene:
+\begin{equation}\begin{split}
+\widetilde n\(\omega\)=n\(\omega\)+ik\(\omega\)=\sqrt{\widetilde \ke\(\omega\)}
+\end{split}\end{equation}
+con $k$ \b{coefficiente di estinzione}.
+
+Nell'attraversamento di due mezzi si ha: 
+\begin{equation}\begin{split}
+\e_{r,1}=\ke=n^2-k^2\\
+\e_{r,2}=\frac{\sigma}{\e}\omega=2nk.
+\end{split}\end{equation}
+Se l'onda è omogenea, cioè $q_1||q_2$, si ha $\widetilde \q=\frac{\omega}{c}\widetilde n\u_q$ e quindi:
+\begin{equation}\begin{split}
+\begin{cases}
+\q_1=\frac{\omega}{c}n\u_q\\
+\q_2=\frac{\omega}{c}k\u_q
+\end{cases}
+\end{split}\end{equation}
+e l'equazione dell'onda piana ha come soluzione:
+\begin{equation}\begin{split}
+\widetilde \E\(\r,t\)=\widetilde \E_0e^{-\frac{\omega}{c}k\u_q\cdot\r}e^{i\(\frac{\omega}{c}n\u_q\cdot\r-\omega t\)}
+\end{split}\end{equation}
+dove $n$ determina la velocità di fase $\frac{c}{n}$ e $k$ misura l'attenuazione dell'ampiezza dell'onda con la propagazione all'interno del mezzo.
+
+\subsubsection{Relazioni di Kramers-Kronig}
+$\e_1\(\omega\)$ e $\e_2\(\omega\)$ non sono indipendenti ma sono legate da relazioni integrali che seguono rigorosamente la causalità e la loro risposta, applicata a qualsiasi relazione lineare, è una funzione. Le \b{relazioni} sono:
+\begin{equation}\begin{split}
+\e_1\(\omega\)=\e_0+\frac{2}{\pi}P\int_0^{\infty}{\frac{\omega'\e_2\(\omega'\)}{\omega'^2-\omega^2}d\omega'}
+\end{split}\end{equation}
+\begin{equation}\begin{split}
+\e_2\(\omega\)=\frac{2\omega}{\pi}P\int_0^{\infty}{\frac{\e_1\(\omega'\)-1}{\omega'^2-\omega^2}d\omega'}
+\end{split}\end{equation}
+dove $P$ indica la parte principale dell'integrale.
+
+\subsubsection{Coefficiente di Fresnel}
+Esprime la relazione lineare tra l'ampiezza di un campo elettrico incidente e riflesso che obbedisce alla causalità:
+\begin{equation}\begin{split}
+\widetilde r=|\widetilde r|e^{i\theta}.
+\end{split}\end{equation}
+Una relazione di dispersione esiste nella connessione tra la parte reale e immaginaria. Usando la \b{riflettività a incidenza normale} definita da:
+\begin{equation}\begin{split}
+R=|\widetilde r|^2
+\end{split}\end{equation}
+la \b{relazione di dispersione tra il valore assoluto di $R$ e la fase $\theta$} è:
+\begin{equation}\begin{split}
+\theta\(\omega\)=-\frac{\omega}{\pi}P\int_0^{\infty}{\frac{\ln{\[R\(\omega'\)\]}}{\omega'^2-\omega^2}d\omega'}
+\end{split}\end{equation}
+
+\subsubsection{Coefficiente di assorbimento}
+Il \b{coefficiente di assorbimento} $\beta$ di un'onda \elettrom in un mezzo varia tra \SI{e6}{\per\centi\metre} a \SI{e-3}{\per\centi\metre}; esso descrive la diminuzione dell'intensità dell'onda relativa in termini di unità di spazio. Finché l'intensità è $I=\frac{ncE^2}{2}$, il coefficiente è:
+\begin{equation}\begin{split}
+\beta\(\omega\)=\frac{2k\omega}{c}=\frac{4\pi k}{\lambda}=\frac{\omega \e_{r,2}}{nc}.
+\end{split}\end{equation}
+
+L'attenuazione esponenziale dell'intensità dopo una propagazione di distanza $d$ è dovuta alla \b{legge di Labert-Beer}:
+\begin{equation}\begin{split}
+I=I_0e^{-\beta d}
+\end{split}\end{equation}
+definendo $\beta d$ come \b{densità ottica}.
+
+\subsection{Velocità di gruppo}
+Essa è la velocità con cui si propaga un pacchetto d'onde in un mezzo dispersivo, mentre la velocità di fase è quella di una singola onda di pulsazione fissata. Le relative formule sono:
+\begin{equation}\begin{split}
+v_g=\frac{d\omega}{dk}=v+k\frac{dv}{dk}
+\end{split}\end{equation}
+\begin{equation}\begin{split}
+v_f=v=\frac{c}{n}.
+\end{split}\end{equation}
+
+Essendo $\omega=k_0c=kv=k\frac{c}{n}$ allora si ha che:
+\begin{equation}\begin{split}
+k=nk_0=n\frac{\omega}{c}.
+\end{split}\end{equation}
+Considerando anche che $\frac{dv}{dk}=\frac{dv}{d\omega}\frac{d\omega}{dk}=v_g\frac{dv}{d\omega}$ e che $\frac{dv}{d\omega}=c\frac{d{\frac{1}{n}}}{d\omega}=-\frac{c}{n^2}\frac{dn}{d\omega}$ si ha anche che:
+\begin{equation}\begin{split}
+v_g=v+kv_g\frac{dv}{d\omega}=v-\frac{ck}{n^2}v_g\frac{dn}{d\omega}=v-\frac{\omega}{n}v_g\frac{dn}{d\omega}.
+\end{split}\end{equation}
+Unendo le due espressioni si ottiene infine:
+\begin{equation}\begin{split}
+v_g=\frac{v}{1+\frac{\omega}{n}\frac{dn}{d\omega}}=\frac{c}{n+\omega\frac{dn}{d\omega}}.
+\end{split}\end{equation}
+
+Per una \b{dispersione normale} si ha:
+\begin{equation}\begin{split}
+\frac{dn}{d\omega}>0\\
+v_g<v_f
+\end{split}\end{equation}
+e per una \b{dispersione anormale} si ha invece:
+\begin{equation}\begin{split}
+\frac{dn}{d\omega}<0\\
+v_g>v_f.
+\end{split}\end{equation}

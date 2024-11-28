@@ -1,0 +1,181 @@
+\documentclass[a4paper,11pt,twoside,openany]{report}
+\usepackage[italian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+\usepackage{hyperref}
+\usepackage{indentfirst}
+\usepackage[binding=5mm]{layaureo}
+\usepackage[T1]{fontenc}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{braket}
+\usepackage{calrsfs}
+\usepackage{caption}
+\usepackage{chemfig}
+\usepackage{eufrak}
+\usepackage{graphicx}
+\usepackage{mhchem}
+\usepackage{multirow}
+\usepackage{pdfpages}
+\usepackage{pgfplots} \pgfplotsset{compat=newest}
+\usepackage[output-decimal-marker = {.}, exponent-product = \cdot]{siunitx}
+\usepackage{tabularx}
+\usepackage{verbatim}
+
+\raggedbottom
+\theoremstyle{definition}
+\newtheorem{definizione}{Definizione}
+\newtheorem{es}{Esempio}
+
+\theoremstyle{plain}
+\newtheorem{teo}{Teorema}
+\newtheorem{lemma}{Lemma}
+
+\def\Xint#1{\mathchoice 
+  {\XXint\displaystyle\textstyle{#1}}% 
+  {\XXint\textstyle\scriptstyle{#1}}% 
+  {\XXint\scriptstyle\scriptscriptstyle{#1}}% 
+  {\XXint\scriptscriptstyle\scriptscriptstyle{#1}}% 
+  \!\int} 
+\def\XXint#1#2#3{{\setbox0=\hbox{$#1{#2#3}{\int}$} 
+  \vcenter{\hbox{$#2#3$}}\kern-.5\wd0}} 
+\def\Mint{\Xint \sim}
+
+\def\ddp{d.d.p. }
+\def\cond{condensatore }
+\def\cmq{comunque }
+\def\mom{momento }
+\def\magn{magnetizzazione }
+\def\elettrom{elettromagnetica }
+\def\rifl{riflessione }
+\def\rifr{rifrazione }
+\def\bir{birifrangenza }
+
+\def\b{\textbf}
+\def\bb{\mathbf}
+\def\grad{\nabla}
+\def\rot{\grad\times}
+\def\div{\grad\cdot}
+\def\const{\textrm{const}}
+\def\sat{\textrm{sat}}
+\def\loc{\textrm{loc}}
+\def\({\left(}
+\def\){\right)}
+\def\[{\left[}
+\def\]{\right]}
+
+\def\e{\varepsilon}
+\def\ke{{\varepsilon_r}}
+\def\km{\kappa_m}
+\def\chim{\chi_m}
+\def\E{\bb{E}}
+\def\El{\E_{\textrm{loc}}}
+\def\P{\bb{P}}
+\def\D{\bb{D}}
+\def\F{\bb{F}}
+\def\B{\bb{B}}
+\def\Bl{\B_{\textrm{loc}}}
+\def\H{\bb{H}}
+\def\m{\bb{m}}
+\def\M{\bb{M}}
+\def\j{\bb{j}}
+\def\jsm{\bb{j}_{s,m}}
+\def\u{\bb{u}}
+\def\un{\bb{u}_n}
+\def\ut{\bb{u}_t}
+\def\ds{ d\bb{s}}
+\def\L{\bb{L}}
+\def\S{\bb{S}}
+\def\J{\bb{J}}
+\def\MM{\mathcal{M}}
+\def\o{\bb{\omega}}
+\def\v{\bb{v}}
+\def\I{\bb{I}}
+\def\p{\bb{p}}
+\def\r{\bb{r}}
+\def\k{\bb{k}}
+\def\q{\bb{q}}
+\def\In{\mathcal{I}}
+\def\n{n_}
+
+\def\de{$\e$ }
+\def\dke{$\ke$ }
+\def\dkm{$\km$ }
+\def\dchim{$\chim$ }
+\def\dE{$\E$ }
+\def\dEl{$\El$ }
+\def\dP{$\P$ }
+\def\dD{$\D$ }
+\def\dF{$\F$ }
+\def\dB{$\B$ }
+\def\dBl{$\Bl$ }
+\def\dH{$\H$ }
+\def\dm{$\m$ }
+\def\dM{$\M$ }
+\def\dj{$\j$ }
+\def\djsm{$\jsm$ }
+\def\du{$\u$ }
+\def\dun{$\un$ }
+\def\dut{$\ut$ }
+\def\dL{$\L$ }
+\def\dS{$\S$ }
+\def\dJ{$\J$ }
+\def\dMM{$\MM$ }
+\def\do{$\omega$ }
+\def\dv{$\v$ }
+\def\dI{$\I$ }
+\def\dr{$\r$ }
+\def\dk{$\k$ }
+\def\dq{$\q$ }
+
+\author{Francesco~Dulio}
+\title{Appunti di \\Elettromagnetismo 2}
+\date{}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\part{Elettromagnetismo}
+\input{capitoli/cap5}%Capitolo 5
+\input{capitoli/cap9}%Capitolo 9
+\input{capitoli/cap13}%Capitolo 13
+\part{Ottica}
+\input{capitoli/cap14}%Capitolo 14
+\input{capitoli/cap15}%Capitolo 15
+\input{capitoli/cap16}%Capitolo 16
+\input{capitoli/cap17}%Capitolo 17
+
+\end{document}
+
+\begin{equation}\begin{split}
+
+\end{split}\end{equation}
+
+\widetilde 
+
+%SEZIONI CAPITOLO 17
+\section{Aberrazioni}%Aberrazioni
+
+\subsection{Aberrazione cromatica}
+
+\subsection{Aberrazione di sfericità}
+
+\subsection{Coma, astigmatismo, curvatura di campo}
+
+\subsection{Distorsione}
+
+\section{Strumenti ottici}%Strumenti ottici
+
+\subsection{Occhio umano}
+
+\subsection{Lente di ingrandimento}
+
+\subsection{Microscopio}
+
+\subsection{Cannocchiale}

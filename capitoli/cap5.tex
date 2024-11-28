@@ -1,0 +1,454 @@
+\chapter{Dielettrici}%Dielettrici
+La carica di un conduttore si distribuisce sempre sulla sua superficie in modo tale che il campo generato da essa e da altre cariche eventualmente presenti sia nullo all'interno del conduttore.
+
+\section{Costante dielettrica}%Costante dielettrica
+\subsection{Condensatore piano carico e isolato (carica sulle armature costante)}
+$$E_0=\frac{\sigma_0}{\varepsilon_0}; \qquad V_0=\frac{q_0}{C_0}=E_0h$$ con $h$ la distanza tra le armature.
+
+Introducendo una lastra \emph{conduttrice} tra le armature diminuisce la \ddp $$V=E_0(h-s)<V_0$$ con $s$ lo spessore della lastra. Introducendo una lastra \emph{isolante} tra le armature diminuisce la \ddp e l'effetto è minore di quello con la lastra conduttrice. La \ddp diminuisce linearmente all'aumentare dello spessore della lastra. Il contatto tra la lastra e le armature non produce nessun effetto.
+
+Si definisce il rapporto \b{adimensionale} della \b{costante dielettrica relativa}:
+\begin{equation}\begin{split}
+\ke=\frac{V_0}{V_{e_r}}>1
+\end{split}\end{equation}
+con $V_{e_r}$ il valore di \ddp minimo con la lastra isolante a contatto con le armature.
+
+Si definisce la \b{suscettività elettrica del dielettrico}:
+\begin{equation}\begin{split}
+\chi=\ke-1
+\end{split}\end{equation}
+e la \b{densità di carica di polarizzazione}:
+\begin{equation}\begin{split}
+\sigma_p=\frac{\ke-1}{\ke}\sigma_0=\frac{\chi}{\ke}\sigma_0
+\end{split}\end{equation}
+
+Si ha di conseguenza:
+\begin{equation}\begin{split}
+E_\ke=\frac{V_{\ke}}{h}=\frac{V_0}{h\ke}=\frac{E_0}{\ke}=\frac{\sigma_0}{\varepsilon_0 \ke}=\frac{\sigma_0}{\varepsilon_0}-\frac{\sigma_p}{\varepsilon_0}.
+\end{split}\end{equation}
+Il campo elettrico all'interno del dielettrico ha la stessa espressione di un campo nel vuoto, sovrapposizione del campo dovuto alla cariche libere sulle armature e del campo di una distribuzione uniforme di carica con densità $\sigma_p$.
+
+Si definisce la \b{capacità del condensatore}:
+\begin{equation}\begin{split}
+C_\ke=\frac{q_0}{V_\ke}=\ke\frac{q_0}{V_0}=\ke C_0=\ke\frac{\e_0\Sigma}{h}=\frac{\e\Sigma}{h}
+\end{split}\end{equation}
+che aumenta dello stesso fattore $\ke$ di cui è diminuita la \ddp ai capi del condensatore. Si definisce infine la \b{costante dielettrica assoluta del dielettrico}:
+\begin{equation}\begin{split}
+\e=\ke\e_0.
+\end{split}\end{equation}
+
+Il migliore dielettrico è quello con $\ke$ piccola, il miglior schermo è quello con $\ke$ grande. Il vuoto ha $\ke=1$.
+
+\section{Polarizzazione dei dielettrici}%Polarizzazione dei dielettrici
+Nei \emph{conduttori} un certo numero di elettroni per atomo è separato dall'atomo stesso: all'interno dei conduttori esiste un gas di elettroni praticamente liberi.
+
+Negli \emph{isolanti} tutti gli elettroni sono legati agli atomi e non se ne allontanano. Per far avvenire la separazione occorre agire dall'esterno. Se si applica un campo elettrico esterno avviene soltanto uno spostamento locale delle cariche.
+
+In un atomo in condizioni normali e in assenza di campo elettrico esterno la distribuzione degli elettroni è, in media, simmetrica rispetto al nucleo: il centro di massa della carica negativa coincide con il nucleo positivo. Sotto l'azione di un campo, il centro di massa della nube negativa subisce uno spostamento in verso contrario al campo e il nucleo in senso concorde al campo.
+
+Si definisce il \b{\mom di dipolo elettrico}:
+\begin{equation}\begin{split}
+\bb{p}_a=Ze\bb{x}
+\end{split}\end{equation}
+considerando $\bb{x}$ la distanza tra il centro della carica e il nucleo.
+
+\subsection{Polarizzazione elettronica}
+Un atomo acquista un \mom di dipolo elettrico microscopico $\bb{p}_a$, parallelo e concorde al campo $\bb{E}$.
+
+\subsection{Polarizzazione per orientamento}
+Esistono delle sostanze le cui molecole presentano un \mom di dipolo intrinseco: sono molecole poliatomiche formate da specie atomiche diverse (\ce{H_2O}, \ce{CO_2}, \ce{NH_3}), in cui la distribuzione delle cariche è tale che il centro delle cariche negative non coincide con il centro delle cariche positive. I dipoli molecolari sono orientati a caso.
+
+Quando si applica un campo, su ciascuno dei dipoli di \mom $\bb{p}_0$ agisce il \mom delle forze $\bb{p}\times\bb{E}$ che ne causa un orientamento con il campo soltanto parziale perché disturbato dall'agitazione termica. Ogni molecola acquista un \mom di dipolo elettrico medio $<\bb{p}>$ microscopico, parallelo al campo.
+
+Il processo è autoconsistente: il campo dipende sia dal campo introdotto sia da quello provocato da tutti i dipoli.
+
+Il \mom di dipolo per unità di volume nell'intorno del punto $O$ è $\bb{P}=n<\bb{p}>$ e questa è la definizione del vettore \b{polarizzazione del dielettrico}. Esso viene definito anche:
+\begin{equation}\begin{split}
+\bb{P}=\e_0 (\ke-1)\bb{E}=\e_0\chi\bb{E}=\frac{\Delta\bb{p}}{\Delta\tau}.
+\end{split}\end{equation}
+
+\section{Campo elettrico prodotto da un dielettrico polarizzato}%Campo elettrico prodotto da un dielettrico polarizzato
+\subsection{Condensatore piano carico polarizzato uniformemente con all'interno una lastra dielettrica}
+Si ha, suddividendo la lastra in prismi infinitesimi di base $d\Sigma_0$, altezza $dh$ e volume $d\tau=d\Sigma_0dh$, $$d\bb{p}=\bb{P}d\tau=Pd\Sigma_0d\bb{h}.$$ Si ottiene lo stesso risultato se al posto di ogni prisma si sostituiscono due cariche $\pm dq=\pm Pd\Sigma$ poste nel vuoto distanti tra loro $dh$.
+
+\b{Potenziale e campo di dipolo di un sistema neutro di cariche \emph{non} dipendono dalla distribuzione effettiva delle cariche}.
+
+Avviene una compensazione delle cariche spostate dalle posizioni di equilibrio all'interno del dielettrico uniformemente polarizzato, ma non alla superficie limite dove la discontinuità del mezzo impedisce la compensazione. \b{Sulla superficie la carica è localizzata, non libera}. La lastra viene ad essere equivalente a due distribuzioni di carica, localizzate sulle facce, con densità $\pm \sigma_p=\pm P$.
+
+Le cariche di polarizzazione non sono libere come nei conduttori: esse si manifestano a causa degli spostamento microscopici locali, ma rimangono vincolate agli atomi o alle molecole.
+
+\subsection{Dielettrico di forma qualunque uniformemente polarizzato}
+Si ha la \b{densità superficiale}:
+\begin{equation}\begin{split}
+\sigma_p=P\cos{(\theta)}=\bb{P}\cdot\bb{u}_n
+\end{split}\end{equation}
+che è uguale alla componente di $\bb{P}$ lungo la normale alla superficie. Si avrà quindi sempre una parte della superficie carica positivamente e la restante carica negativamente. Essendo uniforme la polarizzazione, si avrà la \b{carica superficiale nulla} $\oint{\sigma_pd\Sigma}=\oint{\bb{P}\cdot\bb{u}_nd\Sigma}=0$.
+
+\subsection{Polarizzazione non uniforme}
+Se $\bb{P}$ varia lungo l'asse x, non c'è compensazione tra le cariche e compare la carica di polarizzazione anche all'interno del dielettrico. Si ha quindi che, dentro un volume infinitesimo $d\tau$, c'è la carica $$dq_p=\(-\frac{\partial P_x}{\partial x}-\frac{\partial P_y}{\partial y}-\frac{\partial P_z}{\partial z}\right)d\tau=-\div \bb{P} d\tau$$ distribuita con \b{densità di volume}:
+\begin{equation}\begin{split}
+\rho_{p}=\frac{dq_p}{d\tau}=-\div \bb{P}.
+\end{split}\end{equation}
+
+Oltre alla densità superficiale $\sigma_p$ esiste una densità spaziale di carica di polarizzazione uguale in ogni punto all'opposto della divergenza del vettore $\bb{P}$. Anche qui la \b{carica totale di polarizzazione} del dielettrico deve essere \b{nulla}: $\oint{\bb{P\cdot u}_nd\Sigma}=\int_{\tau}{\div\bb{P}d\tau}$. \b{Le distribuzioni di carica spaziale e superficiale si compensano \emph{globalmente} dando carica totale nulla}.
+
+Se $\div\bb{P}=0$ non è detto che sia solo perché $\bb{P}=0$; se invece $\bb{P}=\const$ si ha $\div\bb{P}=0$ e quindi le cariche sono solo sulla superficie.
+
+Si può calcolare anche il \b{potenziale}:
+\begin{equation}\begin{split}
+V(Q)=\frac{1}{4\pi\e_0}\oint{\frac{\bb{P\cdot u}_nd\Sigma}{r}}-\frac{1}{4\pi\e_0}\int_{\tau}{\frac{\div\bb{P}d\Sigma}{r}}.
+\end{split}\end{equation}
+
+In presenza di \b{cariche libere} si ha il \b{potenziale}:
+\begin{equation}\begin{split}
+V'(Q)=V(Q)+\frac{1}{4\pi\e_0}\oint{\frac{\sigma'd\Sigma'}{r'}}.
+\end{split}\end{equation}
+
+Le sorgenti del campo elettrico sono sia le cariche libere localizzate sulla superficie dei conduttori sia le cariche polarizzate descritte da $\sigma_p$ e $\rho_p$.
+
+\section{Campo elettrico all'interno di un dielettrico polarizzato}%Campo elettrico all'interno di un dielettrico polarizzato
+\subsection{Lastra dielettrica posta all'interno di un condensatore piano carico}
+Compare una densità $\sigma_p$ sulle facce della lastra. Nello spazio vuoto tra le armature, il modulo del campo elettrico vale $E_0=\frac{\sigma_0}{\e_0}$; all'interno del dielettrico il valore sarebbe:
+\begin{equation}\begin{split}
+\E=\frac{\sigma_0-\sigma_p}{\e_0}=\E_0-\frac{\P}{\e_0}.
+\end{split}\end{equation}
+
+La \ddp tra due punti è $V_A-V_B=\int_A^B{\bb{E}\cdot d\bb{s}}=Eh$. Per un percorso esterno al dielettrico il campo elettrico è quello nel vuoto dovuto alle distribuzioni di carica; per un percorso interno al dielettrico il campo elettrico incontra situazioni particolari: la lastra è composta da nuclei e da elettroni e i campi elettrici locali sono molto differenti a seconda che la linea di integrazione passi vicina ad un nucleo o nello spazio vuoto tra gli atomi. \b{Il campo elettrico nell'integrale è} quindi \b{il campo totale}, dovuto sia alle cariche esterne che e quelle atomiche ed è rapidamente variabile da punto a punto.
+
+\b{I campi elettrici locali sono conservativi}. Si può quindi definire un \b{campo elettrico macroscopico all'interno del dielettrico}, coincidente con il campo, che produce le distribuzioni nello spazio occupato dal dielettrico, considerato come se fosse vuoto:
+\begin{equation}\begin{split}
+\E=\frac{1}{h}\int_A^B{\bb{E}_i\cdot d\bb{s}}.
+\end{split}\end{equation}
+
+\section{Equazioni generale dell'elettrostatica in presenza di dielettrici}%Equazioni generale dell'elettrostatica in presenza di dielettrici
+\b{Il campo elettrico prodotto da cariche ferme è conservativo anche in presenza di dielettrici polarizzati}. Valgono le formule:
+\begin{equation}\begin{split}
+\oint{\bb{E}\cdot d\bb{s}}=0\\
+\rot\bb{E}=0\\
+\bb{E}=-\grad V
+\end{split}\end{equation}
+
+Rimane soddisfatta la \b{legge di Gauss}:
+\begin{equation}\begin{split}
+\oint{\bb{E\cdot u}_nd\Sigma}=\frac{q+q_p}{\e_0}\\
+\div\bb{E}=\frac{\rho+\rho_p}{\e_0}
+\end{split}\end{equation}
+cioè che il flusso del campo elettrico attraverso una superficie chiusa è uguale alla somma delle cariche libere e delle cariche di polarizzazione contenute all'interno della superficie.
+
+Essendo $\rho_p=-\div \bb{P}$ si ha $\div(\e_0\bb{E}+\bb{P})=\rho$. Definendo il vettore \b{induzione dielettrica} come:
+\begin{equation}\begin{split}
+\bb{D}=\e_0\bb{E}+\bb{P}
+ \end{split}\end{equation}
+si ha quindi:
+\begin{equation}\begin{split}
+q=\oint{(\e_0\bb{E}+\bb{P})\cdot\bb{u}_nd\Sigma}=\oint{\bb{D\cdot u}_nd\Sigma}
+\end{split}\end{equation}
+\begin{equation}\begin{split}
+\div\bb{D}=\rho
+\end{split}\end{equation}
+
+\b{Il flusso del vettore $\bb{D}$ attraverso una superficie chiusa}, contenente in generale sia cariche libere che cariche di polarizzazione, \b{dipende soltanto dalle cariche libere}.
+
+In generale $\bb{D}$ è \b{non conservativo} e di conseguenza anche il vettore $\bb{P}$ è \b{non conservativo}.
+
+\section{Dipendenza della polarizzazione dal campo elettrico}%Dipendenza della polarizzazione dal campo elettrico
+\begin{equation}\begin{split}
+\bb{P}=\e_0(\ke-1)\bb{E}=\e_0\chi\bb{E}\\
+\bb{D}=\e_0\bb{E}+\bb{P}=\e_0(1+\chi)\bb{E}=\e_0\ke\bb{E}=\e\bb{E}
+\end{split}\end{equation}
+\begin{equation}\begin{split}
+\bb{P}=\frac{\ke-1}{\ke}\bb{D}=\frac{\chi}{1+\chi}\bb{D}
+\end{split}\end{equation}
+
+\subsection{Dielettrico lineare omogeneo}
+\begin{equation}\begin{split}
+\div\bb{P}=\frac{\ke-1}{\ke}\div\bb{D}
+\end{split}\end{equation}
+
+\subsubsection{Assenza di cariche libere}
+\begin{equation}\begin{split}
+\div\bb{D}=0\\
+\rho_p=-\div\bb{P}=0
+\end{split}\end{equation}
+In un dielettrico lineare e omogeneo la densità spaziale di carica di polarizzazione è nulla e le cariche di polarizzazione sono distribuite esclusivamente sulle superficie.
+
+\subsection{Dielettrico lineare con costante dielettrica variabile da punto a punto}
+\begin{equation}\begin{split}
+\div\bb{P}=\frac{\ke-1}{\ke}\div\bb{D}+\bb{D}\cdot\grad\left(\frac{\ke-1}{\ke}\)
+\end{split}\end{equation}
+
+\subsubsection{Assenza di cariche libere}
+\begin{equation}\begin{split}
+\rho_p=-\div\bb{P}=-\bb{D}\cdot\grad\left(\frac{\ke-1}{\ke}\)
+\end{split}\end{equation}
+I dielettrici lineari sono dotati di simmetria spaziale, cioè sono isotropi.
+
+\subsection{Dielettrici anisotropi}
+La polarizzazione $\bb{P}$ non è in generale parallela al campo $\bb{E}$ e si hanno le relazioni:
+\begin{equation}\begin{split}
+\begin{cases}
+P_x=\e_0\left(\chi_{11}E_x+\chi_{12}E_y+\chi_{13}E_z\right)\\
+P_y=\e_0\left(\chi_{21}E_x+\chi_{22}E_y+\chi_{23}E_z\right)\\
+P_z=\e_0\left(\chi_{31}E_x+\chi_{32}E_y+\chi_{33}E_z\right)
+\end{cases}
+\end{split}\end{equation}
+\begin{equation}\begin{split}
+\begin{cases}
+D_x=\e_0\left[\left(1+\chi_{11}\right)E_x+\chi_{12}E_y+\chi_{13}E_z\right]=\e_xE_z\\
+D_y=\e_0\left[\chi_{21}E_x+\left(1+\chi_{22}\right)E_y+\chi_{23}E_z\right]=\e_yE_y\\
+D_z=\e_0\left[\chi_{31}E_x+\chi_{32}E_y+\left(1+\chi_{33}\right)E_z\right]=\e_zE_x
+\end{cases}
+\end{split}\end{equation}
+avendo definito il \b{tensore suscettività elettrica} come $\chi_{ij}$, tensore simmetrico.
+
+\paragraph{Cristalli fotonici:} diventano trasparenti o visibili rispetto all'incidenza della luce. Sono formati, in modo ripetitivo, di dielettrici e vuoto. Il campo varia nel tempo.
+
+\section{Discontinuità dei campi sulla superficie di separazione tra due dielettrici}%Discontinuità dei campi sulla superficie di separazione tra due dielettrici
+\b{La componente tangenziale di $\bb{E}$ rimane costante} nel passaggio attraverso $\Sigma$: $$E_{1,t}=E_{2,t}.$$ Applicando la legge di Gauss al vettore $\bb{D}$, scegliendo per superficie di integrazione una scatola cilindrica di altezza infinitesima ortogonale a $\Sigma$ e con le basi all'interno dei due dielettrici, si ottiene che \b{la componente normale di $\bb{D}$ non varia}: $$D_{1,n}=D_{2,n}.$$ Si ha quindi:
+\begin{equation}\begin{split}
+\e_0E_{1,n}+P_{1,n}=\e_0E_{2,n}+P_{2,n}\\
+E_{2,n}-E_{1,n}=\frac{P_{1,n}-P_{2,n}}{\e_0}=\frac{\sigma_{1p}-\sigma_{2p}}{\e_0}
+\end{split}\end{equation}
+
+Per \b{dielettrici lineari} vale:
+\begin{equation}\begin{split}
+\ke_1\e_0E_1\cos{(\theta_1)}=\ke_2\e_0E_2\cos{(\theta_2)}\\
+\Longrightarrow \frac{\tan{(\theta_1)}}{\tan{(\theta_2)}}=\frac{\ke_2}{\ke_1}
+\end{split}\end{equation}
+
+\subsection{Rifrazione delle linee di forza}
+La discontinuità della componente normale di $\bb{E}$, insieme alla continuità della componente tangenziale, comporta un cambiamento di direzione di linee di forza del campo elettrico.
+
+Se $\ke_1<\ke_2$, le linee di forza si allontanano dalla normale alla superficie. Se $\theta_1=0$ anche $\theta_2=0$ e perciò si ha $D_1=D_2$ e $\ke_1E_1=\ke_2E_2$.
+
+\subsection{Cavità cilindrica vuota con basi ortogonali alle linee di $\bb{D}$: $\ke=1$}
+Il vettore $\bb{D}$ ha lo stesso valore nel dielettrico e nella cavità. Misurando il campo elettrico $\bb{E}_1$ nella cavità e moltiplicandolo per $\e_0$ si ottiene il valore di $\bb{D}$ all'interno del dielettrico.
+
+\section{Campo elettrico all'interno di una cavità di un dielettrico}%Campo elettrico all'interno di una cavità di un dielettrico
+Il campo all'interno del dielettrico è dato dalla somma del campo dovuto a un volume di dielettrico che racchiude il punto $\E_b$ e dal campo elettrico $\E_c$ dovuto a tutte le altre cariche (libere esterne al dielettrico e di polarizzazione sul dielettrico):
+\begin{equation}\begin{split}
+\E_Q=\E_c+\E_b
+\end{split}\end{equation}
+
+\subsection{Cavità cilindrica polarizzata uniformemente (raggio $R$, lunghezza $h$)}
+\dP è parallela all'asse del cilindro.
+\begin{equation}\begin{split}
+\E_Q=\E_++\E_-=-\frac{\P}{2\e_0}\left[\left(1-\cos{\theta_+}\)+\left(1-\cos{\theta_-}\)\right]
+\end{split}\end{equation}
+con $\theta_{\pm}$ gli angoli sotto cui, da $Q$, sono visti i bordi dei dischi coincidenti con le basi del cilindro.
+
+\begin{itemize}
+\item Nel centro:
+\begin{equation}\begin{split}
+\E_{Q_0}=-\frac{\P}{\e_0}\left(1-\cos{\theta_0}\)
+\end{split}\end{equation}
+\item Su una base (quella negativa):
+\begin{equation}\begin{split}
+\E_{Q_1}=-\frac{\P}{2\e_0}\left(2-\cos{\theta_+}\)=-\frac{\P}{2\e_0}\left(1-\frac{1}{2}\cos{\theta_+}\)
+\end{split}\end{equation}
+è un campo depolarizzante.
+\end{itemize}
+
+Il campo nella cavità cilindrica è:
+\begin{equation}\begin{split}
+\E_c=\E-\E_{Q_0}=\E+\frac{\P}{\e_0}\left(1-\cos{\theta_0}\)
+\end{split}\end{equation}
+
+\subsubsection{Cavità lunga e sottile: $R\ll h$}
+\begin{equation}\begin{split}
+\E_c=\E+\frac{2R^2}{\e_0h^2}\P=\left(1+\frac{2R^2}{h^2}\chi\right)\E
+\end{split}\end{equation}
+al limite ($\frac{R}{h}=0$) il campo elettrico nella cavità è uguale a quello del dielettrico.
+
+\subsubsection{Cavità piatta: $R\gg h$}
+\begin{equation}\begin{split}
+\E_c=\E+\frac{\P}{\e_0}=\ke\E
+\end{split}\end{equation}
+maggiore nella cavità vuota che nel dielettrico.
+
+\begin{equation}\begin{split}
+\D=\e_0\E_c=\e_0\E+\P
+\end{split}\end{equation}
+uguale nel dielettrico e nella cavità.
+
+\subsection{Cavità sferica uniformemente polarizzata}
+\begin{equation}\begin{split}
+\E_b=\frac{\P}{3\e_0}
+\end{split}\end{equation}
+\begin{equation}\begin{split}
+\E_c=\E+\frac{\P}{3\e_0}=\left(1+\frac{\chi}{3}\)\E=\frac{\ke+2}{3}\E
+\end{split}\end{equation}
+\begin{equation}\begin{split}
+\D=\e_0\E_c=\e_0\E+\frac{\P}{3}
+\end{split}\end{equation}
+\begin{equation}\begin{split}
+\P=\e_0\left(\ke-1\right)\E=3\e_0\frac{\ke-1}{\ke+2}\E_c
+\end{split}\end{equation}
+
+Il campo nella cavità è maggiore o al più uguale a quello nel dielettrico:
+\begin{equation}\begin{split}
+\E_c=\E+\gamma\frac{\P}{\e_0}
+\end{split}\end{equation}
+con $\gamma=0$ per una cavità cilindrica sottile; $\gamma=1$ per una cavità cilindrica piatta; $\gamma=\frac{1}{3}$ per una cavità sferica. Viene misurato da $\gamma$ l'\b{effetto depolarizzante} che si ha nel blocco di dielettrico.
+
+\section{Energia elettrostatica nei dielettrici}%Energia elettrostatica nei dielettrici
+\begin{equation}\begin{split}
+U_e=\frac{q^2}{2C}=\frac{\sigma^2\Sigma^2h}{2\e\Sigma}=\frac{1}{2}\e E^2\Sigma h
+\end{split}\end{equation}
+\begin{equation}\begin{split}
+U_e=\int_\tau{\frac{\e E^2}{2}d\tau}
+\end{split}\end{equation}
+
+Si definisce la \b{densità di energia elettrostatica}:
+\begin{equation}\begin{split}
+u_e=\frac{U_e}{\Sigma h}=\frac{1}{2}\e E^2=\frac{D^2}{2\e}
+\end{split}\end{equation}
+
+Nei dielettrici anisotropi:
+\begin{equation}\begin{split}
+\div\D=\rho\\
+\Longrightarrow \div(V\D)=\grad V\cdot\D+V\grad\cdot\D\\
+\Longrightarrow u_e=\frac{1}{2}\int_\tau{V\grad\cdot\D d\tau}=\frac{1}{2}\int_\tau{\div(V\D)-\grad V\cdot\D d\tau}
+\end{split}\end{equation}
+se l'integrale è esteso a tutto lo spazio, il primo termine si annulla perché si applica il teorema della divergenza e si ha $V\D\sim\frac{1}{r^3}$ che tende a 0 per $r\to\infty$ mentre si ha il secondo che vale:
+\begin{equation}\begin{split}
+u_e=\frac{1}{2}\int_\tau{\E\cdot\D d\tau}
+\end{split}\end{equation}
+con i campi \dE e \dD che \b{non sono paralleli tra loro}, ma possono essere diretti verso qualsiasi direzione.
+
+\section{Meccanismi di polarizzazione nei dielettrici isotropi}%Meccanismi di polarizzazione nei dielettrici isotropi
+\begin{equation}\begin{split}
+\P=\e_0\chi\E
+\end{split}\end{equation}
+
+\subsection{Polarizzazione elettronica in un gas con molecole non polari}
+I gas non polari non hanno \mom di dipolo intrinseco o permanente. \b{Densità}:
+\begin{equation}\begin{split}
+\rho=\frac{-Ze}{\frac{4}{3}\pi R^3}
+\end{split}\end{equation}
+
+Sotto l'azione del campo elettrico $\El$, la nube elettronica risente della forza $\F_{\textrm{loc}}=-Ze\E_{\textrm{loc}}$ che causa uno spostamento del centro rispetto al nucleo di una quantità $x$. Il nucleo risente di una forza attrattiva dovuta al campo di una distribuzione sferica uniforme di carica:
+\begin{equation}\begin{split}
+\E_-=\rho_-\frac{\bb{x}}{3\e_0}=-\frac{Ze\bb{x}}{4\pi\e_0 R^3}
+\end{split}\end{equation}
+La \b{forza che il nucleo esercita sulla nube elettronica} vale $\F_e=-Ze\E_-$. All'equilibrio si ha:
+\begin{equation}\begin{split}
+\F_{\textrm{loc}}+\F_e=0\\
+\Longrightarrow Ze\bb{x}=\bb{p}_a=4\pi\e_0 R^3\E_{\textrm{loc}}=\e_0\alpha_e\E_{\textrm{loc}}
+\end{split}\end{equation}
+con $\bb{p}_a$ il \mom di dipolo elettrico e $\alpha_e$ la \b{polarizzabilità elettronica}.
+
+Essendo definita la polarizzazione come $\P=\e_0\chi\E$, si ha:
+\begin{equation}\begin{split}
+\P=n\bb{p}_a=\e_0n\alpha_e\E_{\textrm{loc}}
+\Longrightarrow \chi=n\alpha_e.
+\end{split}\end{equation}
+Il campo agente sul singolo atomo non coincide con il campo macroscopico \dE presente nel dielettrico, in cui è compreso il contributo dell'atomo interessato (questo è trascurabile in un gas in condizioni standard). La suscettività elettrica $\chi$ è data come somma della polarizzabilità dei singoli atomi contenuti nell'unità di volume (essa è dell'ordine di $10^{-4}$).
+
+\subsection{Polarizzazione per orientamento nei gas}
+Le molecole hanno un \mom di dipolo permanente $\bb{p}_0$ (si parla ad esempio di \ce{H_2O}). Tali molecole contengono due o più atomi, di specie diverse, disposti secondo configurazioni in cui il centro della carica negativa non coincide con quello della carica positiva.
+
+\subsubsection{In assenza di campo elettrico}
+I singoli dipoli sono diretti casualmente in tutte le direzioni; il \mom di dipolo elettrico è nullo.
+
+\subsubsection{Con campo elettrico esterno}
+Si ha polarizzazione elettronica e agisce un \mom:
+\begin{equation}\begin{split}
+\bb{M}=\bb{p}_0\times\E_{\textrm{loc}}
+\end{split}\end{equation}
+che tende ad orientare $\bb{p}_0$ in modo concorde ad $\El$. A temperature ordinarie e con campo elettrici non particolarmente intensi si ha un allineamento solamente parziale che si rappresenta con $<\bb{p}_0>$ parallelo a $\El$.
+
+La funzione che descrive il comportamento statistico è la \b{distribuzione di Boltzmann}:
+\begin{equation}\begin{split}
+\frac{dN}{N}=Ae^{-\frac{U}{k_BT}}dU.
+\end{split}\end{equation}
+Essa è valida se i dipoli, pur interagendo tramite urti, rimangono liberi. Questo è valido sempre nei gas in condizioni normali, ma può non verificarsi in un liquido.
+
+Si trova l'\b{energia elettrostatica}:
+\begin{equation}\begin{split}
+U=-\bb{p}_0\cdot\E_{\textrm{loc}}\\
+\frac{dN}{N}=-Ap_0E_{\textrm{loc}}e^{\frac{p_0E_{\textrm{loc}}\cos{\theta}}{k_BT}}d\cos{\theta}
+\end{split}\end{equation}
+che in condizioni ordinarie mostra che l'energia potenziale in presenza del campo locale è molto minore dell'energia legata all'agitazione termica.
+
+Ciascuna molecola ha una componente del \mom di dipolo $\bb{p}_0$ parallela al campo \dEl data da $p(\theta)=p_0\cos{\theta}$ e la somma di queste componenti dà il \mom di dipolo risultante nella direzione del campo. Le componenti ortogonali al campo danno somma nulla, per la simmetria. Si ha il \b{\mom di dipolo per $N$ molecole}:
+\begin{equation}\begin{split}
+\bb{p}=\int{d\bb{p}}=-\frac{N}{2}p_0\int_{1}^{-1}{\left(1+\frac{p_0E_{\textrm{loc}}\cos{\theta}}{k_BT}\)\cos{\theta}d\cos{\theta}}=\frac{Np_0^2E_{\textrm{loc}}}{3k_BT}.
+\end{split}\end{equation}
+Il \b{\mom di dipolo acquistato da ogni singola molecola} è invece:
+\begin{equation}\begin{split}
+<\bb{p}_a>=\frac{\bb{p}}{N}=\frac{p_0^2}{3k_BT}\El
+\end{split}\end{equation}
+parallelo e concorde al campo $\El$.
+
+Si può definire la \b{polarizzabilità per orientamento} $\alpha_D$:
+\begin{equation}\begin{split}
+\alpha_D=\frac{p_0^2}{3\e_0k_BT}
+\end{split}\end{equation}
+e avere $$<\bb{p}_a>=\e_0\alpha_D\E_{\textrm{loc}}.$$
+
+Considerando $\P=n<\bb{p}_a>=n\e_0\alpha_D\E_{\textrm{loc}}=\e_0\chi\E$ si ottiene la \b{suscettività elettrica}:
+\begin{equation}\begin{split}
+\chi=n\alpha_D=\frac{np_0^2}{3\e_0k_BT}.
+\end{split}\end{equation}
+
+Riassumendo infine si ha la \b{polarizzabilità complessiva}:
+\begin{equation}\begin{split}
+\alpha=\alpha_e+\alpha_D=\alpha_e+\frac{p_0^2}{3\e_0k_BT}
+\end{split}\end{equation}
+e la \b{suscettività complessiva}:
+\begin{equation}\begin{split}
+\chi=n\alpha=n\left(\alpha_e+\alpha_D\right)\\
+\Longrightarrow \ke-1=n\left(\alpha_e+\frac{p_0^2}{3\e_0k_BT}\).
+\end{split}\end{equation}
+In un dielettrico polare, di norma, l'importanza della polarizzazione per orientamento è maggiore di quella della polarizzazione elettronica. $\ke-1$, in funzione di $\frac{1}{T}$, varia linearmente: l'intercetta con l'asse delle ordinate dà $\alpha_e$ e il coefficiente angolare dà $p_0^2$.
+
+\section{Costante dielettrica dei liquidi}%Costante dielettrica dei liquidi
+\begin{equation}\begin{split}
+\P=n\bb{p}=\e_0n\alpha\El
+\end{split}\end{equation}
+Nei gas è lecito approssimare \dEl con il campo medio macroscopico. Il campo microscopico invece comprende l'azione di tutti i dipoli del dielettrico escluso quello interessato. Supponendo sferica una molecola, il campo locale può essere pensato come quello agente all'interno di una cavità sferica. Il \b{campo realmente agente su una molecola} è quindi:
+\begin{equation}\begin{split}
+\El=\E+\frac{\P}{3\e_0}.
+\end{split}\end{equation}
+Il termine $\frac{\P}{3\e_0}$ rappresenta il rinforzo del campo medio dovuto all'azione locale dei dipoli che circondano la molecola interessata.
+
+Si ottiene
+\begin{equation}\begin{split}
+\P=\e_0\frac{n\alpha}{1-\frac{n\alpha}{3}}\E
+\end{split}\end{equation}
+avendo considerato $\P=\e_0n\alpha\(\E+\frac{\P}{3\e_0}\)$.
+
+Si ottiene quindi:
+\begin{equation}\begin{split}
+\chi=\ke-1=\frac{n\alpha}{1-\frac{n\alpha}{3}}.
+\end{split}\end{equation}
+Nei gas l'effetto delle molecole circostanti la molecola interessata è trascurabile (perciò $\P=\e_0n\alpha\E$ e $\El\simeq\E$).
+
+\subsection{Liquidi non polari}
+Si ha $\chi\sim 0.6$. Il campo locale è:
+\begin{equation}\begin{split}
+\El=\(1+0.2\)\E
+\end{split}\end{equation}
+e perciò l'effetto delle molecole circostanti la molecola interessata porta ad un incremento del 20\% del campo medio \dE.
+
+Supponendo che la polarizzazione sia la stessa nella fase gassosa e nella fase liquida $\(\frac{\(n\alpha\)_g}{\(n\alpha\)_l}=\frac{n_g}{n_l}=\frac{\rho_g}{\rho_l}\)$, si ha $\rho_g/\rho_l=810$ e perciò $\(n\alpha\)_l=0.44$. Si ottiene quindi $\chi_l=0.52$.
+
+Esplicitando $n\alpha$, si ottiene
+\begin{equation}\begin{split}
+\frac{n\alpha}{3}=\frac{\ke-1}{\ke+2}
+\end{split}\end{equation}
+che inserita nell'espressione di $\chi$ porta all'\b{equazione di Clausius-Mossotti}:
+\begin{equation}\begin{split}
+\frac{1}{\rho}\frac{\ke-1}{\ke+2}=\frac{N_A\alpha}{3A}.
+\end{split}\end{equation}
+Questa equazione non si può applicare alle molecole polari.
+
+\section{Polarizzazione nei solidi}%Polarizzazione nei solidi
+\begin{itemize}
+\item \b{Cristalli ionici}: gli ioni che formano  il reticolo cristallino si spostano sotto l'azione del campo elettrico provocando la formazione di un \mom di dipolo addizionale per unità di volume, cioè di una polarizzazione.
+\item \b{Elettreti}: sottoposti a un campo elettrico molto intenso acquistano una notevole polarizzazione dovuta all'allineamento dei dipoli elementari e la conservano anche quando il campo viene spento. Generano nello spazio un campo di dipolo che però, se non si prendono particolari precauzioni, viene annullato da cariche libere presenti nell'aria che si depositano sul materiale e anche dallo spostamento di cariche all'interno.
+\item \b{Piezoelettrici}: sottoposti a compressione o trazione presentano una polarizzazione e quindi generano un campo elettrico. Se si applica un campo elettrico, essi si deformano. Attraverso un attuatore piezoelettrico si possono far compiere per esempio ad un vetrino spostamenti di frazioni di \si{mm}. Si applica una \ddp al materiale e questo permette vetrina di muoversi in 3D.
+\item \b{Ferroelettrici}: hanno un \mom di dipolo elettrico per ogni cella del reticolo cristallino e in particolari condizioni presentano una polarizzazione spontanea, senza applicazione di campo elettrico, dovuto all'allineamento quasi completo dei dipoli elementari.
+\item \b{Piroelettrici}: si usano soprattutto per misurare la temperatura. Vuole radiazioni da irraggiamento.
+\end{itemize}

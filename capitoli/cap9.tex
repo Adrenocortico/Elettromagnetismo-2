@@ -1,0 +1,741 @@
+\chapter{Proprietà magnetiche della materia}%Proprietà magnetiche della materia
+\section{Magnetizzazione della materia}%Magnetizzazione della materia
+\begin{equation}\begin{split}
+\F=-\grad U=\grad\(\m\cdot\B\)
+\end{split}\end{equation}
+
+\subsection{Solenoide rettilineo}
+Raggio $R$, lunghezza $d$. Sospendendo con una molla una piccola bobina, costituita da $N'$ spire di raggio $r\ll R$ coassiali con le spire del solenoide e percorse dalla corrente $i'$, si ottiene sulla bobina, quando nel solenoide circola la corrente $i$, la forza:
+\begin{equation}\begin{split}
+F=\pm m'\frac{dB}{dx}
+\end{split}\end{equation}
+dove $m'=\pi r^2N'i'$ è il \b{\mom magnetico} della bobina. Se \dm è concorde al campo \dB la forza è attrattiva, altrimenti è repulsiva.
+
+Per la maggior parte delle sostanze la forza, pur facilmente misurabile, è molto piccola anche se il campo magnetico assume valori elevati. Alcune sostanze, sottoposte all'azione del campo magnetico \dB del solenoide, acquistano un \mom magnetico \dm parallelo e concorde a \dB (attratte); altre acquistano invece un \mom \dm parallelo e discorde a \dB (respinte).
+
+Si ha la \b{forza per unità di volume}:
+\begin{equation}\begin{split}
+F_\tau=\frac{F}{\tau}=\frac{m}{\tau}\frac{dB}{dx}=M\frac{dB}{dx}
+\end{split}\end{equation}
+che viene rappresentata mediante la \b{magnetizzazione}:
+\begin{equation}\begin{split}
+\M=\frac{\m}{\tau}.
+\end{split}\end{equation}
+Se si fa variare l'intensità della corrente nel solenoide, si nota che \b{\dM varia con $\B$}. Questo non è valido per il ferro e le sostanze simili per proprietà, per i quali la relazione è più complicata.
+
+Esistono, in base alle caratteristiche sperimentali, tre classi in cui suddividere i materiali:
+\begin{itemize}
+\item \b{Sostanze diamagnetiche}. Vengono respinte dal solenoide: la magnetizzazione \dM è opposta al campo magnetico esterno \dB ed è ad esso proporzionale; l'effetto non dipende dalla temperatura, salvo poche eccezioni.
+\item \b{Sostanze paramagnetiche}. Vengono attratte dal solenoide, quelle cioè in cui la magnetizzazione concorda col campo magnetico; \dM è proporzionale a $\B$. L'effetto aumenta al diminuire della temperatura, ma ci sono svariate eccezioni. In alcuni materiali paramagnetici la forza è dello stesso ordine di grandezza di quella subita dalle sostanze diamagnetiche, in altri è abbastanza superiore. In tutti i casi si tratta di forze piuttosto piccole, alle temperature ordinarie.
+\item \b{Sostanze ferromagnetiche}. Sono attratte fortemente verso la zona in cui il campo magnetico è maggiore; la magnetizzazione è concorde con il campo magnetico però la relazione tra \dM e \dB non è lineare e nemmeno univoca. Di norma i campioni rimangono magnetizzati anche dopo che il campo stato spento.
+\end{itemize}
+
+\section{Permeabilità magnetica e suscettività magnetica}%Permeabilità magnetica e suscettività magnetica
+La magnetizzazione \dM che si forma per l'azione del campo magnetico esterno causa una modifica del campo stesso: il mezzo magnetizzato cioè si aggiunge alle sorgenti di \dB costituite dalle correnti di conduzione.
+
+\subsection{Solenoide indefinito}
+\begin{equation}\begin{split}
+B_0=\mu_0ni
+\end{split}\end{equation}
+Si riempie completamente il solenoide con un mezzo omogeneo, si misura il campo \dB con una sonda Hall posta in una cavità del mezzo a forma di disco sottile con le basi ortogonali alle linee di campo.
+
+Il campo \dB è parallelo e concorde a $\B_0$ e si definisce \b{permeabilità magnetica relativa}, la quantità \b{adimensionale}:
+\begin{equation}\begin{split}
+\km=\frac{B}{B_0}
+\end{split}\end{equation}
+che risulta valida per circuiti di forma qualunque immersi in un mezzo indefinito.
+
+Si definisce anche la \b{permeabilità magnetica assoluta}:
+\begin{equation}\begin{split}
+\mu=\mu_0\km
+\end{split}\end{equation}
+che è una formula generale, in quanto per la legge di Ampère-Laplace il campo nel vuoto ha sempre il coefficiente moltiplicativo $\mu_0$. Si ha quindi che:
+\begin{equation}\begin{split}
+B=\km B_0=\mu_0\km ni=\mu ni=\mu_0ni+\mu_0\chim ni
+\end{split}\end{equation}
+dato dal campo magnetico prodotto dalla corrente di conduzione che circola nelle spire del solenoide sommato all'effetto del mezzo magnetizzato (uguale a quello che sarebbe prodotto da un altro solenoide, uguale al primo, ma percorso dalla corrente di densità lineare $\chim ni$).
+
+Il \b{campo magnetico esistente in un mezzo indefinito omogeneo} (insieme alla densità è costante anche la $\km$) \b{in cui è immerso un circuito percorso da corrente} è dato da:
+\begin{equation}\begin{split}
+\B=\frac{\mu i}{4\pi}\oint{\frac{d\bb{s}\times\bb{u}_r}{r^2}}.
+\end{split}\end{equation}
+
+La variazione del campo magnetico dovuta alla presenza del mezzo è:
+\begin{equation}\begin{split}
+B-B_0=\km B_0-B_0=\(\km-1\)B_0=\chim B_0
+\end{split}\end{equation}
+definendo la \b{suscettività magnetica}:
+\begin{equation}\begin{split}
+\chim=\km-1.
+\end{split}\end{equation}
+
+\subsection{Sostanze diamagnetiche}
+La \dkm è costante al variare di $B$:
+\begin{equation}\begin{split}
+\km<1\Longrightarrow \chim<0.
+\end{split}\end{equation}
+Le \b{correnti amperiane} danno un contributo \b{opposto} a $\B_0$; il momento magnetico \dm è anch'esso \b{opposto} a $\B_0$, ammettendo che \dm nasca dalle correnti amperiane.
+
+\subsection{Sostanze paramagnetiche}
+La \dkm è costante al variare di $B$:
+\begin{equation}\begin{split}
+\km>1\Longrightarrow \chim>0.
+\end{split}\end{equation}
+Le \b{correnti amperiane} sono \b{equiverse} a $\B_0$ e \b{gli effetti magnetici si sommano}.
+
+Esiste una dipendenza, data dalla \b{prima legge di Curie}:
+\begin{equation}\begin{split}
+\chim=\frac{\rho\cdot C}{T}.
+\end{split}\end{equation}
+Con $C$ la costante di Curie. Sopra i \si{2-5 \kelvin} non si usano per gli elettromagneti. Per arrivare a \si{32 \kelvin} si utilizzano correnti impulsive molto grandi prodotte da condensatori in parallelo che scaricano alla stesso momento.
+
+\subsection{Sostanze ferromagnetiche}
+La permeabilità di una sostanza ferromagnetica può arrivare a valori dell'ordine di $10^{3}\sim10^{5}$ ed essa dipende dal valore del campo esterno e dal modo con cui tale valore è stato raggiunto. Le \b{correnti amperiane} sono \b{equiverse} a quelle di conduzione.
+
+\section{Correnti amperiane e magnetizzazione}%Correnti amperiane e magnetizzazione
+Il moto degli elettroni intorno al nucleo può essere assimilato a correnti microscopiche, alle quali è associato un \mom magnetico. In alcune sostanze vi sono condizioni di asimmetria per cui le molecole possono avere un \mom magnetico intrinseco. A causa dell'agitazione termica il \mom magnetico medio è nullo, ma sotto l'azione di un campo magnetico esterno c'è un fenomeno di orientazione parziale e ha origine un \mom magnetico parallelo e concorde al campo esterno, che supera l'effetto diamagnetico.
+
+Tutti gli atomi o le molecole di un materiale acquistano, sotto l'azione del campo $\B$, un \mom magnetico medio $<\m>$, orientato parallelamente a $\B$. Si ha quindi:
+\begin{equation}\begin{split}
+\Delta\m=\Delta N_\tau<\m>\\
+\Longrightarrow \M=\frac{\Delta\m}{\Delta\tau}=\frac{\Delta N_\tau}{\Delta\tau}<\m>=n\m
+\end{split}\end{equation}
+e al tendere di $\Delta\tau$ a 0, viene definita la magnetizzazione \dM in funzione della posizione. Si parla di \b{\magn uniforme} quando \dM è costante nel mezzo (avviene di norma nelle sostanze amorfe, dotate di simmetria spaziale, quando sono immerse in un campo magnetico uniforme).
+
+\subsection{Cilindro magnetizzato uniformemente con \magn parallela all'asse}
+Si isoli un disco di spessore $dz$. Si suddivida il disco in prismi di base $d\Sigma$, altezza $dz$ e volume $d\tau=d\Sigma dz$. Ogni prisma ha \mom magnetico:
+\begin{equation}\begin{split}
+d\m=\M d\tau=Md\Sigma dz\bb{u}_z=di_md\Sigma\bb{u}_z
+\end{split}\end{equation}
+dove l'ultimo passaggio è dato dal principio di equivalenza di Ampère.
+
+\subsubsection{\dM costante}
+Sostituendo ogni prisma di materiale con un equivalente circuito percorso dalla corrente $i_m$, si ha che le correnti si elidono a due a due sui lati contigui dei circuiti elementari e rimangono attive solamente le correnti sulla superficie laterale del cilindro. \b{Il disco di materiale magnetizzato uniformemente è equivalente a tutti gli effetti ad un circuito percorso dalla corrente}
+\begin{equation}\begin{split}
+di_m=Mdz\\
+i_m=\int_0^h{Mdz}=Mh
+\end{split}\end{equation}
+che ha \b{densità lineare di corrente} (misurata in \si{A/m}):
+\begin{equation}\begin{split}
+j_{s,m}=\frac{di_m}{dz}=\frac{i_m}{h}=M\\
+\Longrightarrow \bb{j}_{s,m}=\M\times\bb{u}_n
+\Longrightarrow i_m=\oint{\M\cdot d\bb{s}}
+\end{split}\end{equation}
+
+\subsubsection{\dM non uniforme}
+Si ha che la corrente effettiva lungo l'asse $y$, cioè sulla faccia di contatto, è:
+\begin{equation}\begin{split}
+di_1-di_2=-\frac{\partial M_z}{\partial x}dxdz.
+\end{split}\end{equation}
+Analogamente avviene sulle altre facce e si ha in totale lungo l'asse $y$ la corrente:
+\begin{equation}\begin{split}
+di_y=\(\frac{\partial M_x}{\partial z}-\frac{\partial M_z}{\partial x}\)dxdz
+\end{split}\end{equation}
+Si ottiene quindi:
+\begin{equation}\begin{split}
+j_y=\(\rot\M\)_y
+\end{split}\end{equation}
+
+Considerando gli altri assi si ha in generale la \b{densità di corrente} (misurata in \si{A/m^2}):
+\begin{equation}\begin{split}
+\bb{j}_m=\rot\M.
+\end{split}\end{equation}
+
+Gli effetti magnetici di un mezzo magnetizzato si possono calcolare a partire da una distribuzione superficiale di corrente con densità lineare $\j_{s,m}$ e da una distribuzione spaziale di corrente con densità $\j_m$
+\begin{equation}\begin{split}
+\begin{cases}
+\j_{s,m}=\M\times\bb{u}_n\\
+\j_{m}=\rot\M
+\end{cases}
+\end{split}\end{equation}
+
+Si nota un'analogia con la situazione del dielettrico polarizzato in cui l'effetto del mezzo si calcola a partire da una distribuzione superficiale di carica di polarizzazione $\sigma_p$ e da una distribuzione di volume con densità $\rho_p$, legate al vettore di polarizzazione da:
+\begin{equation}\begin{split}
+\begin{cases}
+\sigma_p=\P\cdot\bb{u}_n\\
+\rho_p=-\div\P
+\end{cases}
+\end{split}\end{equation}
+
+\section{Equazioni generali della magnetostatica}%Equazioni generali della magnetostatica
+Partendo dalle equazioni della magnetostatica nel vuoto
+\begin{equation}\begin{split}
+\begin{cases}
+\rot\B=\mu_0\j\\
+\div\B=0
+\end{cases}
+\end{split}\end{equation}
+si ha che, anche nella materia, il campo magnetico rimane solenoidale, mentre cambiano le equazioni in cui compaiono le sorgenti:
+\begin{equation}\begin{split}
+\oint{\B\cdot d\bb{s}}=\mu\(i+i_m\)=\mu_0i+\mu_0\oint{\M\cdot d\bb{s}}\\
+\rot\B=\mu_0\(\j+\j_m\)=\mu_0\j+\mu_0\grad\times\M
+\end{split}\end{equation}
+
+Si introduce il \b{campo vettoriale} \dH
+\begin{equation}\begin{split}
+\H=\frac{\B}{\mu_0}-\M
+\end{split}\end{equation}
+ottenendo:
+\begin{equation}\begin{split}
+\B=\mu_0\(\H+\M\)
+\end{split}\end{equation}
+e soddisfa alle relazioni:
+\begin{equation}\begin{split}
+\oint{\H\cdot d\bb{s}}=i
+\end{split}\end{equation}
+(che viene denominata \b{legge di Ampère per il campo $\H$} e mostra come la circuitazione di \dH estesa ad una qualsiasi linea chiusa è uguale alla somma delle correnti di conduzione concatenate dalla linea) e
+\begin{equation}\begin{split}
+\rot\H=\j.
+\end{split}\end{equation}
+
+In generale si hanno le \b{equazioni della magnetostatica}:
+\begin{equation}\begin{split}
+\begin{cases}
+\oint{\B\cdot\bb{u}_nd\Sigma}=0, & \div\B=0\\
+\oint{\H\cdot d\bb{s}}=i, & \rot\H=\j
+\end{cases}
+\end{split}\end{equation}
+Sono sparite formalmente le correnti amperiane, ma per risolverle occorre definire il vettore \dM (misurato in  \si{A/m}):
+\begin{equation}\begin{split}
+\M=\chim\H=\frac{1}{\mu}\chim\B=\frac{1}{\mu_0}\frac{\chim}{\km}\B=\frac{1}{\mu_0}\frac{\km-1}{\km}\B
+\end{split}\end{equation}
+ricavando perciò
+\begin{equation}\begin{split}
+\B=\mu_0\(\H+\M\)=\mu_0\(\H+\chim\H\)=\mu_0\(1+\chim\)\H=\mu_0\chim\H=\mu\H.
+\end{split}\end{equation}
+
+Dalla conoscenza delle correnti di conduzione, che sono sotto il nostro controllo, si determina \dH e si riesce a valutare l'effetto sul mezzo (usando la definizione di $\M$) e di calcolare il campo magnetico risultante da tutte le correnti presenti, tramite l'ultima definizione di $\B$. \dH svolge il ruolo di variabile indipendente alla quale si riferiscono gli effetti magnetici nei mezzi e ciò giustifica il fatto di utilizzare $\M=\chim\H$ come equazione di stato.
+
+Il significato fisico sta nell'assunzione che i momenti magnetici presenti nel mezzo magnetizzato siano sempre proporzionali al campo che li provoca (nella maggior parte dei materiali le relazioni sono effettivamente lineari con \dchim e $\mu$ costanti). Quest'affermazione non è valida nei ferromagnetici (\dchim è funzione non univoca di $\H$) per i quali non si può parlare di equazione di stato. La relazione tra \dM e \dH o tra \dB e \dH viene regolata dal \b{ciclo di isteresi}.
+
+\section{Discontinuità dei campi sulla superficie di separazione tra due mezzi magnetizzati}%Discontinuità dei campi sulla superficie di separazione tra due mezzi magnetizzati
+Il \b{campo magnetico} subisce una \b{discontinuità tangenziale} quando passa \b{da una parte all'altra di una superficie sede di una corrente di conduzione}. Analogamente avviene nel passaggio attraverso la superficie di separazione tra due mezzi magnetizzati diversi.
+
+Si individua un piano in cui stanno i tre vettori $\un$, $\H$, \dB e la \magn $\M$. La corrente amperiana \djsm è ortogonale a questo piano e la discontinuità ad essa dovuta sta nel piano suddetto. $\B$, pur essendo discontinuo, resta nel medesimo piano, a differenza di quanto può succedere nel passaggio attraverso una corrente superficiale di conduzione (a priori indipendente da $\B$).
+
+\subsection{Scatola cilindrica con basi nei due mezzi e parallele alla superficie}
+Applicando la legge di Gauss si ottiene che il \b{campo magnetico ha la stessa componente normale delle due parti della superficie di separazione}:
+\begin{equation}\begin{split}
+B_{1,n}=B_{2,n} \\
+B_1\cos{\theta_1}=B_2\cos{\theta_2}
+\end{split}\end{equation}
+e che la \b{componente normale del campo \dH è discontinua nel passaggio attraverso la superficie}:
+\begin{equation}\begin{split}
+\kappa_{1,m}H_{1,n}=\kappa_{2,m}H_{2,n}.
+\end{split}\end{equation}
+
+Applicando la legge di Ampère per il campo \dH ad un rettangolo nel piano individuato dai campi, si ottiene:
+\begin{equation}\begin{split}
+\oint{\H\cdot\ds}=H_{1,t}h-H_{2,t}h=0\\
+\Longrightarrow H_{1,t}=H_{2,t}\\
+\Longrightarrow H_1\sin{\theta_1}=H_2\sin{\theta_2}
+\end{split}\end{equation}
+
+Mentre \b{la componente tangenziale di \dH è continua, quella di \dB è discontinua} e questo permette di definire la \b{legge di rifrazione delle linee di campo magnetico nel passaggio da un mezzo ad un altro}:
+\begin{equation}\begin{split}
+\frac{B_{1,t}}{\kappa_{1,m}}=\frac{B_{2,t}}{\kappa_{2,m}}\\
+\Longrightarrow \frac{\tan{\theta_1}}{\tan{\theta_2}}=\frac{\kappa_{1,m}}{\kappa_{2,m}}
+\end{split}\end{equation}
+
+\subsubsection{Schermo magnetico}
+Si ponga un tubo cilindrico di ferro in un campo magnetico. Le linee di campo si addensano dentro il ferro, segno che il campo assume nelle pareti un valore notevole, e sono quasi assenti all'interno. \b{Lo schermo non è perfetto} perché se $\theta_1=0$ allora anche $\theta_2=0$: le linee esattamente perpendicolari alla superficie penetrano all'interno.
+
+Se le linee di campo sono parallele alla superficie di separazione ($\theta_1=\theta_2=\si{90\degree}$): le componenti normali sono nulle e deve essere $H_1=H_2$, $\frac{B_1}{\kappa_{1,m}}=\frac{B_2}{\kappa_{2,m}}$ e quindi $B_2=\frac{\kappa_{2,m}}{\kappa_{1,m}}B_1$. \b{Le linee di \dB sono più fitte nel mezzo a permeabilità maggiore}.
+
+\paragraph{Definizione operativa del campo magnetico \dB e del campo $\H$:} se si pratica una cavità \b{ortogonale} alle linee di $\B$, si sa che \dB ha lo stesso valore sia nel mezzo che nella cavità; se si pratica una cavità \b{sottile e parallela} alle linee di $\B$, si sa che \dH ha lo stesso valore nella cavità e nel mezzo (ricordando che $\H=\frac{\B}{\mu_0}$).
+
+\section{Confronto tra le leggi dell'elettrostatica e della magnetostatica in mezzi omogenei indefiniti in assenza di cariche libere ($\rho=0$, $\bb{j}=0$)}%Confronto tra le leggi dell'elettrostatica e della magnetostatica in mezzi omogenei indefiniti
+Le equazioni dell'elettrostatica sono:
+\begin{equation}\begin{split}
+\begin{cases}
+\rot\E=0\\
+\div\D=0\\
+\frac{\D}{\e_0}=\E+\frac{\P}{\e_0}
+\end{cases}
+\end{split}\end{equation}
+
+Le equazioni della magnetostatica sono:
+\begin{equation}\begin{split}
+\begin{cases}
+\rot\H=0\\
+\div\B=0\\
+\frac{\B}{\mu_0}=\H+\M
+\end{cases}
+\end{split}\end{equation}
+
+Si notano quindi le corrispondenze:
+\begin{equation}\begin{split}
+\begin{cases}
+\E\leftrightarrow\H\\
+\frac{\D}{\e_0}\leftrightarrow\frac{\B}{\mu_0}\\
+\frac{\P}{\e_0}\leftrightarrow \M
+\end{cases}
+\end{split}\end{equation}
+
+\subsection{Discontinuità}
+\begin{itemize}
+\item Componenti \b{tangenziali continue}:
+\begin{equation}\begin{split}
+\begin{cases}
+E_{1,t}=E_{2,t}\\
+H_{1,t}=H_{2,t}
+\end{cases}
+\end{split}\end{equation}
+\item Componenti \b{normali continue}:
+\begin{equation}\begin{split}
+\begin{cases}
+D_{1,t}=D_{2,t}\\
+B_{1,t}=B_{2,t}
+\end{cases}
+\end{split}\end{equation}
+\item Componenti \b{tangenziali discontinue}:
+\begin{equation}\begin{split}
+\begin{cases}
+\frac{D_{1,t}}{\ke_1}=\frac{D_{2,t}}{\ke_2}\\
+\frac{B_{1,t}}{\kappa_{1.m}}=\frac{B_{2,t}}{\kappa_{2,m}}
+\end{cases}
+\end{split}\end{equation}
+\item Componenti \b{normali discontinue}:
+\begin{equation}\begin{split}
+\begin{cases}
+\ke_1 E_{1,n}=\ke_2 E_{2,n}\\
+\kappa_{1,m} H_{1,n}=\kappa_{2,m} H_{2,n}
+\end{cases}
+\end{split}\end{equation}
+\end{itemize}
+
+\subsection{Cavità sottile parallela alle linee di campo ($\gamma=0$)}
+\begin{equation}\begin{split}
+\begin{cases}
+\E_c=\E\\
+\H_c=\H
+\end{cases}
+\end{split}\end{equation}
+\begin{equation}\begin{split}
+\begin{cases}
+\D_c=\e_0\E_c\neq\D=\e_0\E+\P\\
+\B_c=\mu_0\H_c\neq\B=\mu_0\(\H+\M\)
+\end{cases}
+\end{split}\end{equation}
+
+\subsection{Cavità piatta ortogonale alle linee di campo ($\gamma=1$)}
+\begin{equation}\begin{split}
+\begin{cases}
+\E_c=\E+\frac{\P}{\e_0}\\
+\H_c=\H+\M
+\end{cases}
+\end{split}\end{equation}
+\begin{equation}\begin{split}
+\begin{cases}
+\D_c=\D\\
+\B_c=\B
+\end{cases}
+\end{split}\end{equation}
+
+\subsection{Cavità sferica ($\gamma=\frac{1}{3}$)}
+\begin{equation}\begin{split}
+\begin{cases}
+\E_c=\E+\frac{\P}{3\e_0}\\
+\H_c=\H+\frac{\M}{3}
+\end{cases}
+\end{split}\end{equation}
+\begin{equation}\begin{split}
+\begin{cases}
+\D_c=\e_0\E_c+\frac{\P}{3}\neq\D=\e_0\E+\P\\
+\B_c=\mu_0\H_c=\mu_0\(\H+\frac{\M}{3}\)\neq\B=\mu_0\(\H+\M\)
+\end{cases}
+\end{split}\end{equation}
+
+\subsection{Cavità di forma qualunque}
+\begin{equation}\begin{split}
+\begin{cases}
+\E_c=\E+\gamma\frac{\P}{\e_0}\\
+\H_c=\H+\gamma\M
+\end{cases}
+\end{split}\end{equation}
+
+\subsubsection{Relazioni importanti}
+\begin{equation}\begin{split}
+\begin{cases}
+\E_{\textrm{int}}=-\frac{\P}{3\e_0} & \E_{\textrm{ext}}=\frac{2\P}{3\e_0}\\
+\D_{\textrm{int}}=\frac{2}{3}\P & \D_{\textrm{ext}}=\frac{2}{3}\P
+\end{cases}
+\end{split}\end{equation}
+
+\subsection{Mezzi lineari omogenei}
+Si aggiungono le equazioni di stato:
+\begin{equation}\begin{split}
+\P=\e_0\chi\E\\
+\M=\chim\H
+\end{split}\end{equation}
+Il risultato dei processi di polarizzazione e magnetizzazione sono densità di carica collegate a \dP e densità di corrente collegate a $\M$. Le distribuzioni di volume si ottengono con $\div\P$ e con $\rot\M$: qui non c'è analogia diretta perché le proprietà sia matematiche che fisiche della carica e della corrente sono diverse. In entrambi i casi però le densità di volume si annullano se i mezzi sono omogenei e se non ci sono cariche e correnti libere e si ha:
+\begin{equation}\begin{split}
+\begin{cases}
+\div\bb{P}=\frac{\ke-1}{\ke}\div\bb{D}+\bb{D}\cdot\grad\left(\frac{\ke-1}{\ke}\)\\
+\rot\M=\rot\(\chim\H\)=\grad\chim\times\H+\chim\rot\H
+\end{cases}
+\end{split}\end{equation}
+(nel caso magnetico, se il mezzo è omogeneo si ha $\grad\chim=0$, se non ci sono correnti libere si ha invece $\rot\H=0$).
+
+\section{Sostanze ferromagnetiche}%Sostanze ferromagnetiche
+Le proprietà delle sostanze ferromagnetiche sono molto diverse da quelle delle altre sostanze. Esistono sostanze in natura come la \b{magnetite} (\ce{FeO.Fe_2O_3}), che sottoposte all'azione di un campo magnetico si magnetizzano, diventando sorgenti permanenti di campo magnetico. La magnetizzazione è elevata anche con valori dei campi non particolarmente elevati. Si possono avere questi fenomeni con \ce{Fe}, \ce{Ni}, \ce{Co} e con leghe, con o senza questi elementi. Le proprietà magnetiche delle leghe variano notevolmente con la composizione chimica e dipendono anche dai trattamenti termici subiti. \b{Per portare allo stato vergine i magneti, si riscaldano}.
+
+\subsection{Solenoide toroidale - ciclo di isteresi}
+Il campo \dH viene variato variando l'intensità di corrente nelle spire e il campo \dB nel mezzo viene misurato con una sonda di Hall inserita in una cavità ortogonale alle linee di campo.
+
+Inizialmente il materiale si trova allo \b{stato vergine}. Facendo crescere $\H$, i valori di \dB e di $\M$, si dispongono lungo la \b{curva di prima magnetizzazione}; quando \dH supera il valore $\H_m$, la magnetizzazione resta costante al valore $\M_{\sat}$ e il campo magnetico cresce linearmente con $\H$, molto più lentamente di prima ($\B=\mu_0\(\H+\M_{\sat}\)$). Per $\H>\H_m$ il materiale ha raggiunto la \b{saturazione} e il valore di $\M_{\sat}$ si chiama \b{\magn di saturazione}. Oltre $\H_m$, il campo \dB cresce solo per effetto dell'aumento della corrente di conduzione.
+
+Le grandezze:
+\begin{equation}\begin{split}
+\mu=\frac{B}{H}\\
+\km=\frac{B}{\mu H}=\frac{\mu}{\mu_0}\\
+\chim=\km-1
+\end{split}\end{equation}
+non sono costanti, ma funzioni di $\H$.
+
+Viene definita la \b{permeabilità magnetica differenziale}:
+\begin{equation}\begin{split}
+\mu_d=\frac{dB}{dH}\\
+\kappa_{m,d}=\frac{1}{\mu_0}\frac{dB}{dH}
+\end{split}\end{equation}
+
+Se dopo aver raggiunto il valore $\H_m$ si fa decrescere $\H$, i valori di \dB e \dM si dispongono lungo una nuova curva che si mantiene al di sopra della curva di prima magnetizzazione e interseca l'asse delle ordinate coi valori del \b{campo magnetico residuo} $\B_r$ o della \b{\magn residua} $\M_r$, legati dalla relazione
+\begin{equation}\begin{split}
+B_r=\mu_0 M_r.
+\end{split}\end{equation}
+
+\b{Il materiale è magnetizzato anche in assenza di corrente: è diventato un magnete permanente}.
+
+Per \b{annullare la magnetizzazione} bisogna invertire il senso della corrente e far diminuire \dH fino al valore del \b{campo coercitivo} $\H_c$, in corrispondenza del quale $\M=0$ e $\B=\mu_0\H_c$.
+
+Facendo ulteriormente decrescere \dH si osserva che oltre $-\H_m$ la curva è rettilinea, come lo era oltre $\H_m$, con la stessa pendenza: il materiale ha raggiunto la saturazione ma col verso opposto.
+
+La curva completa prende il nome di \b{ciclo di isteresi del materiale} che rappresenta il diagramma di stato del materiale ferromagnetico e può essere data in funzione di \dM o di $\B$.
+
+Finché \dH varia tra $\H_m$ e $-\H_m$, si ottiene il medesimo ciclo, sempre; se si riduce l'intervallo di variabilità si ottengono cicli più stretti. \b{La magnetizzazione di una sostanza ferromagnetica dipende dalla storia della sostanza, oltre che dal valore di $\H$}.
+
+La forma del ciclo di isteresi dipende fortemente dalla composizione della sostanza. Esistono due tipi di materiali:
+\begin{itemize}
+\item \b{Materiali duri}: il ciclo di isteresi è piuttosto largo ($\M_{\textrm{r}}$ e $\H_{\textrm{c}}$ grandi); sono adatti per la costruzione di magneti permanenti, sia perché $\M_{\textrm{r}}$ è quasi uguale a $\M_{\sat}$ sia perché è difficile smagnetizzarli ($\H_{\textrm{c}}$ grande).
+\item \b{Materiali dolci}: il ciclo di isteresi è piuttosto stretto ($\H_{\textrm{c}}$ è piccolo); è facile magnetizzarli e smagnetizzarli; la permeabilità magnetica è quasi costante in un ampio intervallo di valori di \dH e sono adatti nella costruzione degli elettromagneti.
+\end{itemize}
+
+Viene formulata la \b{seconda legge di Curie} nel modo seguente:
+\begin{equation}\begin{split}
+\frac{\chim\(T-T_C\)}{\rho}=C
+\end{split}\end{equation}
+con $C$ la costante di Curie.
+
+I valori di $\H_m$ (a cui si raggiunge la saturazione) sono in generale modesti, inferiori a \si{10^3 A/m} e si vede che $\mu_0\M_{\sat}\gg\mu_0\H_m$: il contributo del mezzo è largamente predominante.
+
+\paragraph{Memorie} Utilizzano mezzi duri e devono
+\begin{itemize}
+\item essere piccole;
+\item essere stabili;
+\item commutare velocemente;
+\item usare poca energia.
+\end{itemize}
+
+\section{Circuiti magnetici}%Circuiti magnetici
+Un solenoide toroidale è il più semplice esempio di circuito magnetico. Le relazioni tra corrente $i$ che percorre le $N$ spire del solenoide, il campo \dH e il campo \dB sono:
+\begin{equation}\begin{split}
+\oint{\H\cdot\ds}=Ni\\
+\B=\mu\H.
+\end{split}\end{equation}
+Se $\mu$ è abbastanza elevata le linee di \dB e \dH sono praticamente contenute tutte all'interno del mezzo e non c'è flusso del campo \dB attraverso la superficie esterna (\b{flusso disperso} nel mezzo).
+
+Essendo \dB solenoidale, il \b{flusso di \dB è costante} attraverso qualsiasi sezione del materiale:
+\begin{equation}\begin{split}
+\bb{\Phi}\(\B\)=\int{\B\cdot\un d\Sigma}=B\Sigma=\const.
+\end{split}\end{equation}
+\b{Non è essenziale avvolgere le spire su tutto l'anello, ma è sufficiente concentrarle in una regione limitata}.
+
+Supponendo \dH parallelo a $\ds$, si ha:
+\begin{equation}\begin{split}
+Ni=\oint{\H\ds}=\oint{\frac{\B}{\mu}\ds}=\bb{\Phi}\oint{\frac{\ds}{\mu\Sigma}}.
+\end{split}\end{equation}
+
+Vengono definite la \b{forza magnetomotrice} (misurata in \si{A/Wb}=\si{H^{-1}}):
+\begin{equation}\begin{split}
+\mathcal{F}=\oint{\H\ds}=Ni
+\end{split}\end{equation}
+e la \b{riluttanza del circuito}:
+\begin{equation}\begin{split}
+\mathcal{R}=\oint{\frac{\ds}{\mu\Sigma}}
+\end{split}\end{equation}
+
+Unite danno la \b{legge di Hopkinson}:
+\begin{equation}\begin{split}
+\mathcal{F}=\bb{\Phi}\mathcal{R}
+\end{split}\end{equation}
+che è la legge fondamentale per il calcolo dei circuiti magnetici. Nota la geometria del circuito e la permeabilità del mezzo, dalla conoscenza della corrente nell'avvolgimento, si risale al flusso e quindi al valore medio del campo magnetico lungo il circuito, oppure, al contrario, si può calcolare la corrente necessaria per produrre un dato campo magnetico.
+
+\subsection{Relazioni tra circuito elettrico e magnetico}
+\begin{equation}\begin{split}
+\begin{cases}
+\mathcal{E}=\oint{\E\ds}\\
+\mathcal{F}=\oint{\H\ds}
+\end{cases}
+\end{split}\end{equation}
+\begin{equation}\begin{split}
+\begin{cases}
+\j=\sigma\E\\
+\B=\mu\H
+\end{cases}
+\end{split}\end{equation}
+\begin{equation}\begin{split}
+\begin{cases}
+i=\int{\j\cdot\un d\Sigma}\\
+\bb{\Phi}=\int{\B\cdot \un d\Sigma}
+\end{cases}
+\end{split}\end{equation}
+\begin{equation}\begin{split}
+\begin{cases}
+R=\oint{\frac{\ds}{\sigma\Sigma}}\\
+\mathcal{R}=\oint{\frac{\ds}{\mu\Sigma}}
+\end{cases}
+\end{split}\end{equation}
+\begin{equation}\begin{split}
+\begin{cases}
+\mathcal{E}=Ri\\
+\mathcal{F}=\mathcal{R}\bb{\Phi}
+\end{cases}
+\end{split}\end{equation}
+
+L'analogia che si nota è solo formale: in un circuito elettrico la corrente corrisponde ad un moto di cariche, mentre in un circuito magnetico non c'è nessun moto alla base del flusso di $\B$; la $\mathcal{F}$ fornisce l'energia necessaria al moto delle cariche, che viene dissipata dalla resistenza $R$ mentre $\mathcal{F}$ e $\mathcal{R}$ non corrispondono fisicamente ad elementi che forniscono ed assorbono energia.
+
+\section{Elettromagneti}%Elettromagneti
+Se il valore di $\mu$ è abbastanza elevato le linee di \dB e \dH stanno praticamente tutte all'interno del ferro. Questo rimane valido anche se nel circuito magnetico c'è un interferro (un'interruzione) di lunghezza $h$ piccola rispetto alla lunghezza media complessiva $s$ del circuito magnetico. Queste considerazioni stanno alla base degli elettromagneti: dispositivi alimentati da una o più bobine che producono un campo magnetico in una regione di spazio accessibile. Dal momento che $\bb{\Phi}\(\B\)$ è costante, nel passaggio ferro aria \dB è continuo e \dH discontinuo secondo la relazione $B=\mu H=\mu_0H_0$.
+
+La legge di Ampère ($\oint{\H\ds}=i$) applicata a una linea tutta interna al circuito e che concatena la bobina dà $H\(s-h\)+H_0h=Ni$. Ricavando $H_0$ dalla definizione di $B$ e facendo sistema con la legge di Ampère si ha infine:
+\begin{equation}\begin{split}
+\B=-\mu_0\frac{s-h}{h}\H+\mu_0\frac{Ni}{h}.
+\end{split}\end{equation}
+Quest'equazione, nel piano, è una retta a pendenza negativa $-\frac{\mu_0\(s-h\)}{h}$ in cui compaiono solo parametri geometrici. Le sue intercette sono:
+\begin{equation}\begin{split}
+\H^*=\frac{Ni}{s-h}\\
+\B^*=\mu_0\frac{Ni}{h}
+\end{split}\end{equation}
+Al variare della corrente, la retta si sposta parallelamente a sé stessa, essendo fissato il limite dal massimo valore di $Ni$ di progetto, a sua volta dipendente dalla massima temperatura tollerabile nella bobina, dove viene dissipata energia per effetto Joule. I possibili \b{punti di funzionamento} sono \b{determinati dall'intersezione della retta con il ciclo di isteresi}.
+
+\b{Sono possibili stati di funzionamento con vettori \dH e \dB opposti}, questo perché, una volta magnetizzato, il ferro conserva la propria \magn ed occorre un'azione contraria per riportare a 0 ed invertire la magnetizzazione.
+
+\subsubsection{Effetto interferro}
+
+Si consideri inizialmente l'assenza dell'interferro ($h=0$) e si ha la retta con equazione $H=\frac{Ni}{s}$ parallela all'asse $B$, che interseca il ciclo di isteresi lungo un tratto verticale, su cui stanno le possibili soluzioni. \b{La presenza dell'interferro fa ruotare la retta in senso antiorario}, tanto più quanto maggiore è l'interferro (rimanendo $h\ll s$).
+
+\subsection{Magneti permanenti}
+\subsubsection{Magnete a C}
+Dopo averlo portato a saturazione, si riduce a 0 la corrente. \b{Il ferro resta magnetizzato e il campo magnetico residuo è tanto maggiore quanto più squadrato è il ciclo di isteresi}. Si ha infatti:
+\begin{equation}\begin{split}
+\B=-\mu_0\frac{s-h}{h}\H.
+\end{split}\end{equation}
+
+\b{All'interno di un magnete permanete \dB e \dH sono opposti}, dato che nell'interferro \dB e \dH sono concordi. La presenza dell'interferro è la causa che comporta \dH diverso da 0 e discontinuo all'interfaccia ferro-aria.
+
+\subsubsection{Magnete cilindrico}
+Il campo magnetico \dB al centro vale:
+\begin{equation}\begin{split}
+\B=\mu_0\M\(1-\frac{2R^2}{d^2}\)=\mu_0\M\(1-\frac{2\pi R^2}{\pi d^2}\)=\mu_0\M\(1-\frac{2\Sigma}{\pi d^2}\)
+\end{split}\end{equation}
+e il campo \dH al centro vale:
+\begin{equation}\begin{split}
+\H=\frac{\B}{\mu_0}-\M=-\frac{2\Sigma}{\pi d^2}\M
+\end{split}\end{equation}
+ed è opposto a $\B$.
+
+\subsubsection{Cilindro lungo e sottile ($R^2/d^2\ll 1$)}
+Il campo magnetico è praticamente uguale a $\mu_0\M$ in tutti i punti interni, mentre \dH in tali punti è nullo.
+
+\subsubsection{In generale}
+Per un cilindro di dimensioni qualsiasi, il campo magnetico si calcola in tutti i punti, interni ed esterni, come quello un solenoide finito avvolto sulla superficie esterna del cilindro e percorso dalla corrente di densità lineare $M$.
+
+\b{I tre vettori $\B$, \dH e \dM non sono paralleli}. Il risultato si estende ad un blocco ferromagnetico di forma qualsiasi uniformemente magnetizzato.
+
+\section{Correnti elettriche e momenti magnetici atomici}%Correnti elettriche e momenti magnetici atomici
+Si consideri un elettrone libero che ruota attorno al nucleo lungo l'orbita circolare. Il \b{\mom angolare} \dL del moto orbitale:
+\begin{equation}\begin{split}
+L=m_evr
+\end{split}\end{equation}
+essendo $m_e$ la massa dell'elettrone, $v$ la sua velocità e $r$ il raggio dell'orbita. La direzione di \dL è \b{ortogonale al piano dell'orbita}. Il periodo è $T=\frac{2\pi r}{v}$ che corrisponde a una corrente $i=-\frac{e}{T}=-\frac{ev}{2\pi r}$.
+
+Si definisce il \b{\mom magnetico} $\m$:
+\begin{equation}\begin{split}
+\m=i\pi r^2=-\frac{evr}{2}\\
+\m=-\frac{e}{2m_e}\L
+\end{split}\end{equation}
+\b{ortogonale al piano dell'orbita ma opposto a $\L$}. La definizione di \dm è sempre valida, in qualsiasi sistema di forze centrali, anche se l'orbita non è circolare.
+
+Il valore di \dL è quantizzato secondo $\L=\(l+1\)\hbar$ e così il momento magnetico $\m=\frac{e\hbar}{2m_e}$.
+
+L'elettrone possiede anche un \b{\mom angolare intrinseco, lo spin $\S$}:
+\begin{equation}\begin{split}
+\left|\S\right|=\frac{1}{2}\hbar
+\end{split}\end{equation}
+e quindi un \b{\mom magnetico intrinseco $\mu_e$}:
+\begin{equation}\begin{split}
+\mu_e=-\frac{e}{m_e}\S=-2\(\frac{e}{2m_e}\)\S\\
+\Longrightarrow \mu_e=\frac{e\hbar}{2m_e}
+\end{split}\end{equation}
+Il \b{magnetone di Bohr} è il \mom magnetico di riferimento per un elettrone atomico e vale \SI[exponent-product = \cdot]{0.5788e-4}{eV/T}.
+
+Se un atomo ha $Z$ elettroni e per ogni orbita vale che $\m=-\frac{e}{2m_e}\L$, la relazione tra il \mom angolare orbitale risultante e il \mom magnetico orbitale risultante è ancora $\m=-\frac{e}{2m_e}\L$, perché $\frac{e}{2m_e}$ viene raccolto nella somma. C'è da aggiungere il contributo dei momenti magnetici intrinseci degli elettroni e si ha il legame tra il \mom angolare totale \dJ e il \mom magnetico totale $\m$:
+\begin{equation}\begin{split}
+\m=-g\frac{e}{2m_e}\bb{J}.
+\end{split}\end{equation}
+\b{In un atomo il \mom magnetico è sempre parallelo e discorde al \mom angolare}. \b{In un atomo due elettroni non possono stare nello stesso stato, cioè non possono avere tutti i numeri quantici uguali} (principio di Pauli).
+
+Se si ha $\J=0$ si ottengono sostanze diamagnetiche; se si ha $\J\neq 0$ si ottengono sostanze paramagnetiche; se si ha $\S\neq 0$ si ottengono sostanze ferromagnetiche.
+
+\section{Teoria microscopica classica del diamagnetismo e della paramagnetismo}%Teoria microscopica classica del diamagnetismo e della paramagnetismo
+Secondo la relazione
+\begin{equation}\begin{split}
+\M=\chim\H
+\end{split}\end{equation}
+si definiscono le sostanze \b{diamagnetiche} ($\chim<0$, $|\chim|\simeq10^{-4}-10^{-5}$) e \b{paramagnetiche} ($\chim>0$, $\chim\simeq10^{-3}-10^{-5}$).
+
+\subsection{Diamagnetismo (non dipende dalla temperatura)}
+Atomi e molecole non hanno un \mom magnetico intrinseco. Se agisce $\Bl$, uniforme nella regione occupata dall'atomo, compare il momento meccanico $\MM$:
+\begin{equation}\begin{split}
+\MM=\m\times\Bl=\frac{e}{2m_e}\Bl\times\L
+\end{split}\end{equation}
+che ha effetto sulla variazione di $\L$:
+\begin{equation}\begin{split}
+\frac{d\L}{dt}=\MM=\frac{e}{2m_e}\Bl\times\L=\o_L\times\L
+\end{split}\end{equation}
+con $\o_L=\frac{e}{2m_e}\Bl$.
+
+\b{L'effetto di \dMM} non è quello di orientare \dL e \dm parallelamente a $\B$, ma \b{è quello di fare compiere a \dL e \dm un moto di precessione con velocità angolare $\o_L$ attorno alla direzione di $\Bl$, indipendentemente dall'orientazione di \dL rispetto a $\Bl$}. Questo è valido se $\o_L\ll\o$ (essendo $\o$ la velocità angolare legata al moto di rivoluzione che dà origine a $\L$): $\o=\SI[exponent-product = \cdot]{4.13e16}{rad/s}$, $\Bl\ll\SI[exponent-product = \cdot]{4.7e5}{T}$; $\o_L=\SI[exponent-product = \cdot]{8.8e10}{rad/s}$. Al moto di precessione si da il nome di \b{precessione di Larmor}.
+
+Alla precessione di Larmor di un elettrone corrisponde una \b{corrente}:
+\begin{equation}\begin{split}
+\Delta i=-\frac{e}{T_L}=-\frac{e}{2\pi}\o_L=-\frac{e^2\Bl}{4\pi m_e}
+\end{split}\end{equation}
+e un \b{\mom magnetico}:
+\begin{equation}\begin{split}
+\Delta m=\Delta i\pi r^2=-\frac{e^2r^2}{4m_e}\Bl\\
+\Longrightarrow \Delta\m=-\frac{e^2r_i^2}{6m_e}\Bl
+\end{split}\end{equation}
+L'orbita può avere qualsiasi inclinazione rispetto a $\Bl$.
+
+Se l'atomo ha $Z$ elettroni, il \mom magnetico acquistato è:
+\begin{equation}\begin{split}
+\m_a=\sum_1^Z{\Delta \m}=-\frac{e^2}{6m_e}\(\sum_1^Z{r_i^2}\)\Bl=-\frac{e^2Z\mathcal{L}^2}{6m_e}\Bl
+\end{split}\end{equation}
+indicando con $\mathcal{L}^2=\frac{1}{Z}\sum_1^Z{r_i^2}$ il \b{raggio quadratico medio dell'atomo}.
+
+La \magn è:
+\begin{equation}\begin{split}
+\M=n\m_a=-\frac{e^2nZ\mathcal{L}^2}{6m_e}\Bl\\
+\Longrightarrow \M=-\frac{e^2nZ\mathcal{L}^2}{6m_e}\mu_0\H
+\end{split}\end{equation}
+e considerando il campo magnetico come quello all'interno di una cavità sferica:
+\begin{equation}\begin{split}
+\Bl=\mu_0\(1+\frac{\chim}{3}\)\H\simeq\mu_0\H=\B.
+\end{split}\end{equation}
+
+Si ottiene infine la \b{suscettività magnetica in termini di grandezze microscopiche} che compaiono nei singoli processi elementari di magnetizzazione:
+\begin{equation}\begin{split}
+\chim=-n\mu_0\frac{e^2Z\mathcal{L}^2}{6m_e}=-n\alpha_m
+\end{split}\end{equation}
+
+\subsection{Paramagnetismo (orientamento, non totale, nel verso del campo)}
+\b{Si applica la statistica di Boltzmann}. Sostanze le cui molecole hanno un \mom magnetico permanente $\m_0$, risultante dei momenti magnetici orbitali e di spin e legato al \mom angolare $\m=-g\frac{e}{2m_e}\bb{J}$.
+
+In assenza di campo magnetico i momenti magnetici $\m_0$ delle singole molecole sono disposti in modo disordinato e hanno risultante nulla; la presenza di un campo magnetico causa un \mom meccanico $\mathcal{M}=\m_0\times\Bl$. A questo si oppone l'agitazione termica e si raggiunge un equilibrio dinamico caratterizzato dal fatto che ogni particella acquista un \mom magnetico medio $<\m>$ diverso da 0, parallelo e concorde con $\Bl$. Si ha il numero di molecole il cui momento $\m_0$ forma con \dBl un angolo compreso tra $\theta$ e $\theta+d\theta$:
+\begin{equation}\begin{split}
+dN=A^*e^{\frac{m_0\Bl\cos{\theta}}{k_BT}}d\cos{\theta}=A^*e^{a\cos{\theta}}d\cos{\theta}
+\end{split}\end{equation}
+considerando $a=\frac{m_0\Bl}{k_BT}$. Nei paramagnetici a temperatura ambiente si verifica $a\ll 1$.
+
+Volendo trovare la soluzione generale si ha che il \mom acquistato è:
+\begin{equation}\begin{split}
+dm=m_odN\cos{\theta}=m_0A^*e^{a\cos{\theta}}\cos{\theta}d\cos{\theta}
+\end{split}\end{equation}
+diretto nella direzione di $\Bl$.
+
+Il \b{momento medio} acquistato è invece:
+\begin{equation}\begin{split}
+<\m>=\frac{\int_{-1}^1{dm}}{\int_{-1}^1{dN}}=\\
+m_0\frac{\int_{-1}^1{\cos{\theta}e^{a\cos{\theta}}d\cos{\theta}}}{\int_{-1}^1{e^{a\cos{\theta}}d\cos{\theta}}}=\\
+m_0\(\frac{e^a+e^{-a}}{e^a-e^{-a}}-\frac{1}{a}\)=\\
+m_0\(\tanh^{-1}{a}-\frac{1}{a}\)=\\
+m_0L\(a\)
+\end{split}\end{equation}
+avendo definito la \b{funzione di Langevin}
+\begin{equation}\begin{split}
+L\(a\)=\frac{<\m>}{m_0}=\frac{\M}{\M_{\sat}}.
+\end{split}\end{equation}
+La \magn è quindi:
+\begin{equation}\begin{split}
+\M=n<\m>=nm_0L\(a\)=\M_{\sat}L\(a\)
+\end{split}\end{equation}
+
+Considerando l'approssimazione $a\ll 1$ si ha:
+\begin{equation}\begin{split}
+\M=nm_0\frac{a}{3}=\frac{nm_0^2}{3k_BT}\Bl=\frac{\frac{\mu_0nm_0^2}{3k_BT}}{1-\frac{1}{3}\frac{\mu_0nm_0^2}{3k_BT}}\H
+\end{split}\end{equation}
+considerando $\Bl=\mu_0\(\H+\frac{\M}{3}\)$.
+
+Utilizzando le leggi di Curie si ottiene infine:
+\begin{equation}\begin{split}
+\chim=\frac{\rho\cdot C}{T-T_0}.
+\end{split}\end{equation}
+(avendo $\rho\cdot C=\SI{0.26}{K}$, $T_0=\SI{0.09}{K}$ e $C$ la costante di Curie). A temperature non troppo basse si ha la prima legge di Curie: $$\chim=\frac{\rho\cdot C}{T}.$$
+
+\section{Cenno alla teoria del ferromagnetismo}%Cenno alla teoria del ferromagnetismo
+A temperature superiori alla temperatura di Curie, i materiali ferromagnetici si comportano come i paramagnetici. Gli elevati valori di \magn riscontrati sperimentalmente nei ferromagneti a temperatura ambiente, fanno presumere che la funzione $L\(a\)=\frac{\M}{\M_{\sat}}$ possa assumere valori vicini all'unità; a temperatura ambiente però $a$ è grande solo se il campo magnetico \dBl è eccezionalmente intenso: sia quindi $m_0=\mu_B$, $T=\SI{300}{K}$ e $a\simeq10$, questo provoca $B\simeq\SI{3000}{T}$. Si ipotizza perciò;
+\begin{equation}\begin{split}
+\Bl=\mu_0\(\H+\gamma\M\)
+\end{split}\end{equation}
+dove $\gamma$ assume un valore molto grande.
+
+Viene postulato (da Weiss) un \b{campo molecolare} $\H_W=\gamma\M\gg \H$ dovuto all'azione orientatrice mutua che porta ad allineare i momenti magnetici $\m_0$. Essendo definita $a$ come $\frac{m_0\Bl}{k_BT}$ si può sostituire \dBl con la sua espressione e si ottiene:
+\begin{equation}\begin{split}
+a=\frac{\mu_0m_0}{k_BT}\H+\frac{\gamma\mu_0m_0\M_{\sat}}{k_BT}\frac{\M}{\M_{\sat}}
+\end{split}\end{equation}
+ricavando:
+\begin{equation}\begin{split}
+\frac{\M}{\M_\sat}=\frac{k_BT}{\gamma\mu_0m_0\M_\sat}a-\frac{\H}{\gamma\M_\sat}
+\end{split}\end{equation}
+
+\subsection{Effetto della temperatura in assenza di campo esterno}
+Si ha una retta passante per l'origine:
+\begin{equation}\begin{split}
+\frac{\M}{\M_\sat}=\frac{k_BT}{\gamma\mu_0m_0\M_\sat}a=\frac{1}{3}\frac{T}{T_C}a
+\end{split}\end{equation}
+La tangente nell'origine alla curva di Langevin ha l'equazione $\frac{\M}{\M_\sat}=\frac{a}{3}$ e questa coincide con la precedente se
+\begin{equation}\begin{split}
+T_C=\frac{\gamma\mu_0m_0\M_\sat}{3k_B}.
+\end{split}\end{equation}
+
+Se $T>T_C$ la retta $\frac{\M}{\M_\sat}$ non incontra mai la curva di Langevin e non esiste soluzione che non sia $\frac{\M}{\M_\sat}=0$; a campo esterno nullo corrisponde \magn nulla; se $T<T_C$ la retta $\frac{\M}{\M_\sat}$ interseca la curva di Langevin anche in un punto al di fuori dell'origine e quindi è prevista una \b{\magn spontanea}, anche in assenza di campo esterno \dH, dovuta al campo locale di Weiss $\H_W=\gamma\M$; al di sotto di $T_C$ l'agitazione termica non riesce a distruggere l'accoppiamento tra i vari momenti magnetici che si allineano parallelamente uno all'altro.
+
+La $T_C$ si può identificare con la temperatura di Curie. Si ottengono quindi i valori sperimentali: $\mu_0\M_\sat=\SI{2.16}{T}$, $\M_\sat=\SI[exponent-product = \cdot]{1.72e6}{A/m}$, $T_C=\SI[exponent-product = \cdot]{1043}{K}$; $\gamma=\frac{3k_BT}{\mu_0m_0\M_\sat}=2156$; $\H_W=\gamma\M_\sat=\SI[exponent-product = \cdot]{3.71e9}{A/m}$ e $\B_W=\mu_0\H_W=\SI[exponent-product = \cdot]{4662}{T}$.
+
+\subsection{Effetto del campo esterno con temperatura costante}
+Si ha una retta:
+\begin{equation}\begin{split}
+\frac{\M}{\M_\sat}=\frac{1}{3}\frac{T}{T_C}a-\frac{\H}{\gamma\M_\sat}
+\end{split}\end{equation}
+che incontra la curva di Langevin se $T<T_C$ in uno o più punti che danno il valore della funzione $M\(H\)$, simile per andamento a quello del ciclo di isteresi. Se $T>T_C$ si ha che, a causa della grande pendenza della retta, l'intersezione è vicina all'origine e si può approssimare $L\(a\)$ con $\frac{a}{3}$.
+
+Mettendo in sistema la retta e la funzione di Langevin ed eliminando $a$ dal sistema si ha:
+\begin{equation}\begin{split}
+\M=\frac{T_C}{T-T_C}\frac{\H}{\gamma}.
+\end{split}\end{equation}
+Si nota che $\chim=\frac{\M}{\H}$ che corrisponde a $\chim=\frac{\rho\cdot C}{T}$ ponendo $\frac{T_C}{\gamma}=\rho\cdot C$. Si prevede quindi il comportamento come paramagnetico per i ferromagneti a temperature superiori a quelle di Curie.
+
+\subsection{Riassunto}
+La teoria di Weiss riesce a descrivere, almeno qualitativamente, il passaggio dal comportamento paramagnetico a quello ferromagnetico, l'andamento del ciclo di isteresi e la dipendenza della \magn dalla temperatura. Classicamente non si può dare nessuna spiegazione dell'elevato valore del campo locale \dBl che sarebbe necessario per il verificarsi della magnetizzazione spontanea oppure di quale possa essere l'eventuale altra causa del fenomeno.
+
+Il problema è stato risolto dalla meccanica quantistica: a livello atomico il momento magnetico $\m_0$ degli elementi ferromagnetici è dovuto quasi esclusivamente allo spin degli elettroni; nell'atomo si verifica una condizione particolare per cui non si ha una compensazione tra gli spin come ci si potrebbe aspettare dal principio di esclusione. Il fenomeno non è tipico soltanto degli elettroni ferromagnetici, ma avviene anche in altri casi; a questo però si aggiunge che risulta energicamente conveniente, cioè corrisponde ad uno stato di energia minima, la configurazione per cui atomi adiacenti abbiano i momenti angolari paralleli e concordi.
+
+\subsubsection{Domini di Weiss}
+In un cristallo di \ce{Fe} (o di \ce{Co, Ni}) si hanno delle zone, con volume compreso tra $10^{-12}$ e $10^{-18}$ \si{m^3} (contenenti perciò $10^{17}-10^{11}$ atomi), nelle quali \b{esiste una \magn spontanea, dovuta all'interazione non magnetica che allinea gli spin}. All'interno del dominio di magnetizzazione è saturata ad un valore che dipende dalla temperatura.
+
+Domini adiacenti non hanno la \magn nella stessa direzione: nella zona di confine, detta \b{parete di Bloch}, l'orientazione degli spin passa con continuità da quella di un dominio a quella del dominio adiacente.
+
+Un blocco di materiale ferromagnetico è composto di norma da molti cristalli orientati a caso e quindi, pur essendo localmente magnetizzato, può non manifestarsi alcun \mom magnetico. La ragione di questo, sia all'interno dei cristalli che nel blocco, può essere spiegato energeticamente, nel senso che una distribuzione casuale delle singole \dM è quella che rende minima l'energia totale del sistema.
+
+Il reticolo cristallino del \ce{Fe} è cubico centrato e l'orientazione spontanea preferenziale dei domini è quella parallela ai lati del cubo. Quando si applica un campo magnetico dall'esterno si ha uno spostamento delle pareti di Bloch, con ingrandimento dei domini la cui \magn è concorde o quasi al campo esterno, e la \magn del blocco non è più nulla. All'aumentare del campo si ha, prima, che in ogni cristallo c'è un'unica magnetizzazione e, successivamente, che tutte le magnetizzazioni diventano parallele a $\H$. Nel singolo cristallo il valore istantaneo della \magn dipende dall'orientazione di $\H$, anche se non ne dipende la \magn di saturazione, che è caratteristica del materiale; invece dipende dall'orientazione di \dH il valore $\H_{\max}$ per cui si raggiunge la saturazione.
